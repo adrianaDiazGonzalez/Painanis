@@ -8,6 +8,6 @@ import { Component } from "@angular/core";
     <label>HOOOLA</label>
   `
 })
-export class AppComponent {
+export class GiroComponent {
 
 }

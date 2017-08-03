@@ -1,1 +1,7 @@
 @import "nativescript-theme-core/css/core.light.css";
+
+
+.boton{
+   background-color: #E73C3E ;
+   color:white;
+}
