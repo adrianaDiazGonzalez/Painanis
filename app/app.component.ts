@@ -6,6 +6,8 @@ import { Component } from "@angular/core";
     <ActionBar title="My App" class="action-bar"></ActionBar>
     <!-- Your UI components go here -->
     <label>Hola</label>
+    <label>Hola</label>
+    <label>Hola</label>
   `
 })
 export class AppComponent {
