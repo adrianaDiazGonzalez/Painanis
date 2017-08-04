@@ -1,9 +1,7 @@
 {
-	"time": "Fri Aug 04 2017 14:12:24 GMT-0500 (Hora de verano central (México))",
-	"nativePlatformStatus": "3",
+	"time": "Fri Aug 04 2017 14:58:53 GMT-0500 (Hora de verano central (México))",
 	"bundle": false,
 	"release": false,
 	"changesRequireBuild": false,
-	"projectFileHash": "ef225a7f138400ece23f527b88f979bea552ad7a4ff251b1abe384c2f509291a",
-	"changesRequireBuildTime": "Thu Aug 03 2017 16:05:18 GMT-0500 (Hora de verano central (México))"
+	"changesRequireBuildTime": "Fri Aug 04 2017 14:46:04 GMT-0500 (Hora de verano central (México))"
 }

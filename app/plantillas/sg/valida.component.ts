@@ -14,6 +14,7 @@ import { Router } from "@angular/router";
     <TextField hint="CP" [(ngModel)]="cp"></TextField >
     <Button text = "Validar" class="submit-button" (tap)="validar()"></Button>
    
+   
     </StackLayout>
   </ScrollView>
  
@@ -21,7 +22,7 @@ import { Router } from "@angular/router";
 })
 
 
-export class validaComponent {
+export class ValidaComponent {
     validar()
     {
         var cp
