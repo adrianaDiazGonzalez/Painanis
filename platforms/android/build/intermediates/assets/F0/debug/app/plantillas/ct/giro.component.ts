@@ -5,9 +5,15 @@ import { Component } from "@angular/core";
   template: `
     <ActionBar title="My App" class="action-bar"></ActionBar>
     <!-- Your UI components go here -->
-    <label>HOOOLA</label>
-  `
+    <ScrollView>
+   <StackLayout>
+    <ActionBar title="Ménu" class="action-bar"></ActionBar>
+    
+     </StackLayout>
+  </ScrollView>
+  
+    `
 })
-export class AppComponent {
+export class GiroComponent {
 
 }
