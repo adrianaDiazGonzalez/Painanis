@@ -1,17 +1,9 @@
 {
-<<<<<<< HEAD
-	"time": "Fri Aug 04 2017 16:34:50 GMT-0500 (Hora de verano central (México))",
-	"bundle": false,
-	"release": false,
-	"changesRequireBuild": false,
-	"changesRequireBuildTime": "Fri Aug 04 2017 14:46:04 GMT-0500 (Hora de verano central (México))"
-=======
-	"time": "Mon Aug 07 2017 12:55:05 GMT-0500 (Hora de verano central (México))",
+	"time": "Mon Aug 07 2017 14:21:03 GMT-0500 (Hora de verano central (México))",
 	"nativePlatformStatus": "3",
 	"bundle": false,
 	"release": false,
 	"changesRequireBuild": false,
 	"projectFileHash": "ef225a7f138400ece23f527b88f979bea552ad7a4ff251b1abe384c2f509291a",
-	"changesRequireBuildTime": "Mon Aug 07 2017 11:20:08 GMT-0500 (Hora de verano central (México))"
->>>>>>> 36fff9ecce2f4d4db4956a620442dd9aef33cc3b
+	"changesRequireBuildTime": "Mon Aug 07 2017 13:35:15 GMT-0500 (Hora de verano central (México))"
 }

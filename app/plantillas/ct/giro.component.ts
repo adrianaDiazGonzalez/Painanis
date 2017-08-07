@@ -3,8 +3,10 @@ import { Router } from "@angular/router";
 import dialogs = require("ui/dialogs");
 import { LocalStorage } from "./local-storage";
 import { Giro } from "../../modelos/ct/giro";
+import { GiroService } from "../../servicios/ct/giro";
 @Component({
   selector: "my-app",
+  providers : [GiroService],
   template: `
      <ActionBar title="Giros" class="action-bar">
      <ActionItem ios.position="right" android.position="actionBar" (tap)="newTodo()">
@@ -16,8 +18,8 @@ import { Giro } from "../../modelos/ct/giro";
     <GridLayout *ngFor="let todo of todoList" rows="auto" columns="auto, *, auto, auto">
         <Button row="0" col="0" [text]="todo.done ? '&#xf05d;' : '&#xf10c;'" class="fa" [class.btn-done]="todo.done" (tap)="toggleDone(todo)"></Button>
         
-        <Label *ngIf="!todo.editing" row="0" col="1" [text]="giro.cGiro" [class.done]="todo.done" textWrap="true"></Label>
-        <TextField *ngIf="todo.editing" row="0" col="1" hint="Ingresa el nuevo nombre" [(ngModel)]="giro.cGiro"></TextField>
+        <Label *ngIf="!todo.editing" row="0" col="1" [text]="todo.name" [class.done]="todo.done" textWrap="true"></Label>
+        <TextField *ngIf="todo.editing" row="0" col="1" hint="Ingresa el nuevo nombre" [(ngModel)]="todo.done"></TextField>
         
         <Button row="0" col="2" [text]="todo.editing ? '&#xf00c;' : '&#xf040;'" class="fa" (tap)="todo.editing ? doneEditing(todo) : editTodo(todo)"></Button>
         <Button *ngIf="!todo.editing" row="0" col="3" text="&#xf1f8;" class="fa borrar" (tap)="deleteTodo(todo)"></Button>
@@ -35,7 +37,7 @@ export class GiroComponent implements OnInit {
     public isEditing: boolean;
     giro: Giro;
    
-    constructor() {
+    constructor(private giroService : GiroService) {
         this.giro = new Giro();      
         this.todoList = new Array<Todo>();
         this.isEditing = false;
@@ -55,8 +57,15 @@ export class GiroComponent implements OnInit {
             inputType: dialogs.inputType.text
         }).then(r => {
             if (r.result && r.text != "") {
-                this.todoList.push(new Todo(r.text));
-                LocalStorage.todos = this.todoList;
+              /* Objeto giro */
+              this.giro.setIdGiro  = "0";
+              this.giro.setGiro    = r.text;
+              this.giro.setEstGiro = true;
+
+              console.log(this.giro.getGiro);
+
+              this.todoList.push(new Todo(r.text));
+              LocalStorage.todos = this.todoList;
             }
         });
     }
