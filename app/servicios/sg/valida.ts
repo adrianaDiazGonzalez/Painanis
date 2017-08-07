@@ -8,13 +8,14 @@ import "rxjs/add/operator/map";
 export class ValidaService {
 
   //constructor del http para los servicios REST
-  constructor(private http: Http) {}
+  public constructor(private http: Http) {}
   
   //Llamado al servicio REST "get"
     getQuote(ipcCP: string) {
+      console.log("parametro:", ipcCP);
         let headers = new Headers();
         headers.append("ipcCP", ipcCP);
-      this.http.get("192.168.2.153:8810/Painanis/rest/painanis/validacp", { headers: headers })
+      this.http.get("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctParametrosSis_gen", { headers: headers })
       .map(response => response.json())
       .subscribe(result => {
           console.log(JSON.stringify(result));

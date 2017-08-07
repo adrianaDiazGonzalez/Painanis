@@ -11,24 +11,28 @@ import { Router } from "@angular/router";
    <ScrollView>
    <StackLayout >
     <ActionBar title="Dirección" class="action-bar"></ActionBar>
-    <Image src="~/images/book.png" horizontalAlignment="center" verticalAlignment="center" ></Image>
-    <Label text="¡Valida tu dirección!" horizontalAlignment="center"> </Label>
-    <TextField hint="CP" [(ngModel)]="cp"></TextField >
+    <Image src="~/images/mapa.png" class="cp" horizontalAlignment="center" verticalAlignment="center" ></Image>
+    <TextField hint="CP" [(ngModel)]="cp" keyboardType= "Number" verticalAlignment="center" ></TextField >
     <Button text = "Validar" class="boton" (tap)="validar()"></Button>
    
                                    
     </StackLayout>
   </ScrollView>
  
-  `
+  `,
+   styleUrls: ["plantillas/css/valida.css"]
 })
 
 
 export class ValidaComponent {
-    validar()
-    {
-      
-    }
+  cp="";
+  constructor(private validaService: ValidaService){
+  }
+  
+  validar(){
+    console.log("valida", this.cp);
+    this.validaService.getQuote(this.cp);
+  }
 
     
   

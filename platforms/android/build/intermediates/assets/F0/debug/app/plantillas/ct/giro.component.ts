@@ -1,23 +1,8 @@
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
-<<<<<<< HEAD
-
-
-@Component({
-  selector: "my-app",
-  template: `
-     <ActionBar title="Giros" class="action-bar"></ActionBar>
-  <GridLayout>
-   <Button text = " Agregar giro "    (tap)="giroagregar()"></Button>
-    <ListView [items]="lista" class="small-spacing">
-      <ng-template let-item="item">
-        <Label [text]="item.name" class="medium-spacing"></Label>
-      </ng-template>
-    </ListView>
-  </GridLayout>
-=======
 import dialogs = require("ui/dialogs");
 import { LocalStorage } from "./local-storage";
+import { Giro } from "../../modelos/ct/giro";
 @Component({
   selector: "my-app",
   template: `
@@ -26,46 +11,32 @@ import { LocalStorage } from "./local-storage";
         <Label text="&#xf067;" class="fa action-item"></Label>
     </ActionItem>
 </ActionBar>
+<ScrollView>
 <StackLayout>
     <GridLayout *ngFor="let todo of todoList" rows="auto" columns="auto, *, auto, auto">
         <Button row="0" col="0" [text]="todo.done ? '&#xf05d;' : '&#xf10c;'" class="fa" [class.btn-done]="todo.done" (tap)="toggleDone(todo)"></Button>
         
-        <Label *ngIf="!todo.editing" row="0" col="1" [text]="todo.name" [class.done]="todo.done" textWrap="true"></Label>
-        <TextField *ngIf="todo.editing" row="0" col="1" hint="Ingresa el nuevo nombre" [(ngModel)]="todo.name"></TextField>
+        <Label *ngIf="!todo.editing" row="0" col="1" [text]="giro.cGiro" [class.done]="todo.done" textWrap="true"></Label>
+        <TextField *ngIf="todo.editing" row="0" col="1" hint="Ingresa el nuevo nombre" [(ngModel)]="giro.cGiro"></TextField>
         
         <Button row="0" col="2" [text]="todo.editing ? '&#xf00c;' : '&#xf040;'" class="fa" (tap)="todo.editing ? doneEditing(todo) : editTodo(todo)"></Button>
         <Button *ngIf="!todo.editing" row="0" col="3" text="&#xf1f8;" class="fa borrar" (tap)="deleteTodo(todo)"></Button>
     </GridLayout>
 </StackLayout>
-
->>>>>>> 36fff9ecce2f4d4db4956a620442dd9aef33cc3b
-    `
+</ScrollView>
+    `,
+    styleUrls: ["plantillas/css/giro.css"]
     
 })
-<<<<<<< HEAD
-export class GiroComponent implements OnInit {
-  constructor( private router: Router){
-
-  }
-  giroagregar(){
-    this.router.navigate(["/ct/agregar"]);
-  }
-  lista: Array<Object> = [];
-
-  ngOnInit() {
-    this.lista.push({ name: "farmacia" , id: 1 });
-    this.lista.push({ name: "Frutas" , id: 2});
-    this.lista.push({ name: "Comida" , id: 3});
-  }
-
-=======
 
 
 export class GiroComponent implements OnInit {
     public todoList: Array<Todo>;
     public isEditing: boolean;
-
+    giro: Giro;
+   
     constructor() {
+        this.giro = new Giro();      
         this.todoList = new Array<Todo>();
         this.isEditing = false;
     }
@@ -151,5 +122,4 @@ class Todo {
     public set editing(newEditing: boolean) {
         this.isEditing = newEditing;
     }
->>>>>>> 36fff9ecce2f4d4db4956a620442dd9aef33cc3b
 }
