@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Fri Aug 04 14:50:57 CDT 2017
 base.0=C\:\\git\\Painanis\\platforms\\android\\build\\intermediates\\transforms\\dex\\F0\\debug\\folders\\1000\\1f\\main
+=======
+#Mon Aug 07 11:22:55 CDT 2017
+base.0=C\:\\proyectosgit\\Painanis\\platforms\\android\\build\\intermediates\\transforms\\dex\\F0\\debug\\folders\\1000\\1f\\main
+>>>>>>> 36fff9ecce2f4d4db4956a620442dd9aef33cc3b
 renamed.0=classes.dex
 file.0=C\:\\git\\Painanis\\platforms\\android\\build\\intermediates\\transforms\\dex\\F0\\debug\\folders\\1000\\1f\\main\\classes.dex
