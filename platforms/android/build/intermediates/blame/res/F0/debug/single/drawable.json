@@ -9,6 +9,7 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "merged": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable\\abc_tab_indicator_material.xml",
         "source": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_tab_indicator_material.xml"
     },
@@ -20,6 +21,8 @@
         "merged": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_check_material.xml"
 =======
+=======
+>>>>>>> 37834ff6d602c627f9adce55c820b36628569586
         "merged": "C:\\proyectosgit\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\proyectosgit\\Painanis\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_vector_test.xml"
     },
@@ -30,7 +33,22 @@
     {
         "merged": "C:\\proyectosgit\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "C:\\proyectosgit\\Painanis\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_switch_thumb_material.xml"
+<<<<<<< HEAD
 >>>>>>> ab25d501dc38dc6341dc171d0af5050f3f185af3
+=======
+=======
+        "merged": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_check_material.xml"
+>>>>>>> 28a6d4f4ed0c2ae8e94fbaba43c5c26d80e5cdec
+>>>>>>> 37834ff6d602c627f9adce55c820b36628569586
     },
     {
         "merged": "C:\\proyectosgit\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable\\abc_ic_go_search_api_material.xml",
