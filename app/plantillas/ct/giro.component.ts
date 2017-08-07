@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 import dialogs = require("ui/dialogs");
 import { LocalStorage } from "./local-storage";
+import {} from "";
 @Component({
   selector: "my-app",
   template: `
@@ -23,7 +24,8 @@ import { LocalStorage } from "./local-storage";
     </GridLayout>
 </StackLayout>
 </ScrollView>
-    `
+    `,
+    styleUrls: ["plantillas/css/giro.css"]
     
 })
 
