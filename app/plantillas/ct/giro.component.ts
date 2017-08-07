@@ -2,7 +2,7 @@ import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 import dialogs = require("ui/dialogs");
 import { LocalStorage } from "./local-storage";
-import {} from "";
+import { Giro } from "../../modelos/ct/giro";
 @Component({
   selector: "my-app",
   template: `
@@ -16,8 +16,8 @@ import {} from "";
     <GridLayout *ngFor="let todo of todoList" rows="auto" columns="auto, *, auto, auto">
         <Button row="0" col="0" [text]="todo.done ? '&#xf05d;' : '&#xf10c;'" class="fa" [class.btn-done]="todo.done" (tap)="toggleDone(todo)"></Button>
         
-        <Label *ngIf="!todo.editing" row="0" col="1" [text]="todo.name" [class.done]="todo.done" textWrap="true"></Label>
-        <TextField *ngIf="todo.editing" row="0" col="1" hint="Ingresa el nuevo nombre" [(ngModel)]="todo.name"></TextField>
+        <Label *ngIf="!todo.editing" row="0" col="1" [text]="giro.cGiro" [class.done]="todo.done" textWrap="true"></Label>
+        <TextField *ngIf="todo.editing" row="0" col="1" hint="Ingresa el nuevo nombre" [(ngModel)]="giro.cGiro"></TextField>
         
         <Button row="0" col="2" [text]="todo.editing ? '&#xf00c;' : '&#xf040;'" class="fa" (tap)="todo.editing ? doneEditing(todo) : editTodo(todo)"></Button>
         <Button *ngIf="!todo.editing" row="0" col="3" text="&#xf1f8;" class="fa borrar" (tap)="deleteTodo(todo)"></Button>
@@ -33,8 +33,10 @@ import {} from "";
 export class GiroComponent implements OnInit {
     public todoList: Array<Todo>;
     public isEditing: boolean;
-
+    giro: Giro;
+   
     constructor() {
+        this.giro = new Giro();      
         this.todoList = new Array<Todo>();
         this.isEditing = false;
     }
