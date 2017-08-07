@@ -2,10 +2,15 @@ animation_engine_1.NativeScriptAnimationEngine*_frnal_ts_helpers_l58_c38__Inject
 view_1.View*_frnal_ts_helpers_l58_c38__InvisibleNode*toString***
 core_1.Sanitizer*_frnal_ts_helpers_l58_c38__NativeScriptSanitizer*sanitize***
 core_1.PlatformRef*_frnal_ts_helpers_l58_c38__NativeScriptPlatformRef*bootstrapModuleFactory,bootstrapModule,bootstrapApp,livesyncModule,onDestroy,destroy,createNavigationEntry,liveSyncApp***
-compiler_1.ResourceLoader*_frnal_ts_helpers_l58_c38__FileSystemResourceLoader*resolve,get***
 core_1.Renderer2*_frnal_ts_helpers_l58_c38__NativeScriptRenderer*appendChild,insertBefore,removeChild,selectRootElement,parentNode,nextSibling,createComment,createElement,createText,createViewRoot,projectNodes,destroy,setAttribute,removeAttribute,setProperty,addClass,removeClass,setStyle,removeStyle,setBindingDebugInfo,setElementDebugInfo,invokeElementMethod,setValue,listen***
+<<<<<<< HEAD
 browser_1.ɵDomAnimationEngine*_frnal_ts_helpers_l58_c38__NativeScriptAnimationEngine*animateTransition,_onRemovalTransitionOverride,_queuePlayerOverride,_getElementAnimation,_getTransitionAnimation***
 compiler_1.ElementSchemaRegistry*_frnal_ts_helpers_l58_c38__NativeScriptElementSchemaRegistry*hasProperty,hasElement,getMappedPropName,getDefaultComponentElementName,securityContext,validateProperty,validateAttribute,allKnownElementNames,normalizeAnimationStyleProperty,normalizeAnimationStyleValue***
+=======
+compiler_1.ResourceLoader*_frnal_ts_helpers_l58_c38__FileSystemResourceLoader*resolve,get***
+compiler_1.ElementSchemaRegistry*_frnal_ts_helpers_l58_c38__NativeScriptElementSchemaRegistry*hasProperty,hasElement,getMappedPropName,getDefaultComponentElementName,securityContext,validateProperty,validateAttribute,allKnownElementNames,normalizeAnimationStyleProperty,normalizeAnimationStyleValue***
+browser_1.ɵDomAnimationEngine*_frnal_ts_helpers_l58_c38__NativeScriptAnimationEngine*animateTransition,_onRemovalTransitionOverride,_queuePlayerOverride,_getElementAnimation,_getTransitionAnimation***
+>>>>>>> 28a6d4f4ed0c2ae8e94fbaba43c5c26d80e5cdec
 http_1.Http*_frnal_ts_helpers_l58_c38__NSHttp*get***
 common_1.LocationStrategy*_frnal_ts_helpers_l58_c38__NSLocationStrategy*path,prepareExternalUrl,pushState,pushStateInternal,replaceState,forward,back,canGoBack,onPopState,getBaseHref,callPopState,peekState,toString,_beginBackPageNavigation,_finishBackPageNavigation,_isPageNavigatingBack,_beginPageNavigation,_setNavigationOptions,_getStates***
 common_1.PlatformLocation*_frnal_ts_helpers_l58_c38__NativescriptPlatformLocation*getBaseHrefFromDOM,onPopState,onHashChange,pushState,replaceState,forward,back***
@@ -122,7 +127,10 @@ progress_common_1.ProgressBase*_frnal_ts_helpers_l58_c38__Progress*createNativeV
 layout_base_1.LayoutBase*_frnal_ts_helpers_l58_c38__ProxyViewContainer*createNativeView,_getNativeViewsCount,_eachLayoutView,_addViewToNativeVisualTree,_removeViewFromNativeVisualTree,_registerLayoutChild,_unregisterLayoutChild,_parentChanged***
 layout_base_1.CustomLayoutView*_frnal_ts_helpers_l58_c38__Repeater*onLoaded,_requestRefresh,refresh,_onItemsChanged,_getDefaultItemContent,_getDataItem,eachChildView,onLayout,onMeasure***
 content_view_1.ContentView*_frnal_ts_helpers_l58_c38__ScrollViewBase*addEventListener,removeEventListener,onLoaded,onUnloaded,attach,dettach,attachNative,dettachNative***
+<<<<<<< HEAD
 view_1.View*_frnal_ts_helpers_l58_c38__SearchBarBase****
+=======
+>>>>>>> 28a6d4f4ed0c2ae8e94fbaba43c5c26d80e5cdec
 scroll_view_common_1.ScrollViewBase*_frnal_ts_helpers_l58_c38__ScrollView*scrollToVerticalOffset,scrollToHorizontalOffset,createNativeView,_onOrientationChanged,attachNative,_onScrollChanged,dettachNative***
 android.view.ViewTreeObserver.OnScrollChangedListener*_ftns_modules_tns_core_modules_ui_scroll_view_scroll_view_l103_c24__*onScrollChanged***
 java.lang.Object*_frnal_ts_helpers_l58_c38__CompatQueryTextListenerImpl*onQueryTextChange,onQueryTextSubmit***android.support.v7.widget.SearchView.OnQueryTextListener
@@ -133,8 +141,11 @@ java.lang.Object*_frnal_ts_helpers_l58_c38__TabContentFactoryImpl*createTabConte
 android.widget.TabHost*_frnal_ts_helpers_l58_c38__TabHostImpl*onAttachedToWindow***
 segmented_bar_common_1.SegmentedBarItemBase*_frnal_ts_helpers_l58_c38__SegmentedBarItem*setupNativeView,_update,,,,,,,,***
 segmented_bar_common_1.SegmentedBarBase*_frnal_ts_helpers_l58_c38__SegmentedBar*shouldChangeSelectedIndex,createNativeView,initNativeView,disposeNativeView,insertTab,,,,***
+<<<<<<< HEAD
 view_1.ViewBase*_frnal_ts_helpers_l58_c38__SegmentedBarItemBase****
 view_1.View*_frnal_ts_helpers_l58_c38__SegmentedBarBase*_addArrayFromBuilder,_addChildFromBuilder,onItemsChanged,eachChild***
+=======
+>>>>>>> 28a6d4f4ed0c2ae8e94fbaba43c5c26d80e5cdec
 view_1.View*_frnal_ts_helpers_l58_c38__SliderBase****
 java.lang.Object*_frnal_ts_helpers_l58_c38__SeekBarChangeListenerImpl*onProgressChanged,onStartTrackingTouch,onStopTrackingTouch***android.widget.SeekBar.OnSeekBarChangeListener
 slider_common_1.SliderBase*_frnal_ts_helpers_l58_c38__Slider*createNativeView,initNativeView,disposeNativeView,setNativeValuesSilently,,,,,,,,,,,,***

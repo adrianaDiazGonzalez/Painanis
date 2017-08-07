@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
 	"prepareTime": "Mon Aug 07 2017 13:35:15 GMT-0500 (Hora de verano central (México))",
 	"buildTime": "Mon Aug 07 2017 13:38:09 GMT-0500 (Hora de verano central (México))"
+=======
+	"prepareTime": "Mon Aug 07 2017 13:44:30 GMT-0500 (Hora de verano central (México))",
+	"buildTime": "Mon Aug 07 2017 14:00:32 GMT-0500 (Hora de verano central (México))"
+>>>>>>> 28a6d4f4ed0c2ae8e94fbaba43c5c26d80e5cdec
 }
