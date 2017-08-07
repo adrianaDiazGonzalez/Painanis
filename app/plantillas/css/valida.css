@@ -2,7 +2,6 @@ Page {
   background-color: white;
   font-size: 17;
 }
-
 TextField {
   margin:    5;
   padding:   10;
@@ -19,7 +18,6 @@ StackLayout {
    color:white;
    width: 50%;
 }
-
 .cp{
     width: 50%;
     margin-top: 50;

@@ -14,9 +14,7 @@ import { Router } from "@angular/router";
     <Image src="~/images/mapa.png" class="cp" horizontalAlignment="center" verticalAlignment="center" ></Image>
     <TextField hint="CP" [(ngModel)]="cp" keyboardType= "Number" verticalAlignment="center" ></TextField >
     <Button text = "Validar" class="boton" (tap)="validar()"></Button>
-   
-                                   
-    </StackLayout>
+   </StackLayout>
   </ScrollView>
  
   `,
@@ -33,7 +31,4 @@ export class ValidaComponent {
     console.log("valida", this.cp);
     this.validaService.getQuote(this.cp);
   }
-
-    
-  
-  }
+}
