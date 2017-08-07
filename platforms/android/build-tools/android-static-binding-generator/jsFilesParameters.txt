@@ -9,6 +9,7 @@ C:\git\Painanis\platforms\android\src\main\assets\app\plantillas\ct\local-storag
 C:\git\Painanis\platforms\android\src\main\assets\app\plantillas\menu\menu.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\plantillas\ope\categoria.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\plantillas\sg\valida.component.js
+C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ct\giro.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\sg\valida.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\nativescript-angular\animations.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\nativescript-angular\collection-facade.js

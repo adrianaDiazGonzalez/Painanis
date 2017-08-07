@@ -1,20 +1,20 @@
 export class Giro {
-    private iGiro :String;
-    private cGiro :String;
+    private iGiro :string;
+    private cGiro :string;
     private lActivo: boolean;
-    private dtCreado: String;
-    private dtModificado: String;
+    private dtCreado: string;
+    private dtModificado: string;
 
-    public set setIdGiro(iGiro: String){
+    public set setIdGiro(iGiro: string){
         this.iGiro = iGiro;
     }
-    public get getIdGiro(): String{
+    public get getIdGiro(): string{
         return this.iGiro;
     }
-    public set setGiro(cGiro: String){
+    public set setGiro(cGiro: string){
         this.cGiro = cGiro;
     }
-    public get getGiro(): String{
+    public get getGiro(): string{
         return this.cGiro;
     }
     public set setEstGiro(lActivo: boolean){
@@ -23,17 +23,16 @@ export class Giro {
     public get getEstGiro(): boolean{
         return this.lActivo;
     }
-
-    public set setDtcGiro(dtCreado: String){
+    public set setDtcGiro(dtCreado: string){
         this.dtCreado = dtCreado;
     }
-    public get getDtcGiro(): String{
+    public get getDtcGiro(): string{
         return this.dtCreado;
     }
-    public set setDtmGiro(dtModificado: String){
+    public set setDtmGiro(dtModificado: string){
         this.dtModificado = dtModificado;
     }
-    public get getDtmGiro(): String{
+    public get getDtmGiro(): string{
         return this.dtModificado;
     }
 
