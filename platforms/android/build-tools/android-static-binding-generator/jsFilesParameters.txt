@@ -3,6 +3,7 @@ C:\proyectosgit\Painanis\platforms\android\src\main\assets\app\app.module.js
 C:\proyectosgit\Painanis\platforms\android\src\main\assets\app\app.routing.js
 C:\proyectosgit\Painanis\platforms\android\src\main\assets\app\main.js
 C:\proyectosgit\Painanis\platforms\android\src\main\assets\app\plantillas\ct\giro.component.js
+C:\proyectosgit\Painanis\platforms\android\src\main\assets\app\plantillas\ct\local-storage.js
 C:\proyectosgit\Painanis\platforms\android\src\main\assets\app\plantillas\menu\menu.component.js
 C:\proyectosgit\Painanis\platforms\android\src\main\assets\app\plantillas\ope\categoria.component.js
 C:\proyectosgit\Painanis\platforms\android\src\main\assets\app\plantillas\sg\valida.component.js
