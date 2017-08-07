@@ -10,6 +10,7 @@ import { LocalStorage } from "./local-storage";
         <Label text="&#xf067;" class="fa action-item"></Label>
     </ActionItem>
 </ActionBar>
+<ScrollView>
 <StackLayout>
     <GridLayout *ngFor="let todo of todoList" rows="auto" columns="auto, *, auto, auto">
         <Button row="0" col="0" [text]="todo.done ? '&#xf05d;' : '&#xf10c;'" class="fa" [class.btn-done]="todo.done" (tap)="toggleDone(todo)"></Button>
@@ -21,7 +22,7 @@ import { LocalStorage } from "./local-storage";
         <Button *ngIf="!todo.editing" row="0" col="3" text="&#xf1f8;" class="fa borrar" (tap)="deleteTodo(todo)"></Button>
     </GridLayout>
 </StackLayout>
-
+</ScrollView>
     `
     
 })
