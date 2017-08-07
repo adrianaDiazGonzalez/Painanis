@@ -48,9 +48,9 @@ export class GiroComponent implements OnInit {
     }
     public newTodo() {
         dialogs.prompt({
-            title: "Nuevo Todo",
-            message: "Ingrese el titulo del nuevo todo",
-            okButtonText: "Aceptar",
+            title: "Nuevo Giro",
+            message: "Ingrese un nuevo giro",
+            okButtonText: "Agregar",
             cancelButtonText: "Cancelar",
             inputType: dialogs.inputType.text
         }).then(r => {
