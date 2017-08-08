@@ -13,14 +13,27 @@ export class ValidaService {
   //Llamado al servicio REST "get"
     getQuote(ipcCP: string) {
       console.log("parametro:", ipcCP);
+      let retorno;
         let headers = new Headers();
         headers.append("ipcCP", ipcCP);
       this.http.get("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctParametrosSis_gen", { headers: headers })
       .map(response => response.json())
       .subscribe(result => {
           console.log(JSON.stringify(result));
-        }, error => {
+          /*if(result.response.opcMensaje)
+            {
+              alert(result.response.opcMensaje)
+            }*/
+          
+            retorno = result;
+            console.log(retorno);
+          
+          }, error => {
              console.log("ERROR: ", error);
+              retorno = error;
             });
+          return retorno;
+
     }
 }
+ 
