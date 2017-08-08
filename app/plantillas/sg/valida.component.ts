@@ -10,7 +10,7 @@ import * as Dialogs from "ui/dialogs";
 @Component({
   selector: "my-app",
   providers: [ValidaService],
-  templateUrl: "plantillas/sg/valida.xml",
+  templateUrl: "plantillas/sg/valida.html",
   styleUrls: [ "plantillas/css/valida.css"]
 })
 
