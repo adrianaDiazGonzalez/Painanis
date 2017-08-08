@@ -53,7 +53,6 @@ export class GiroService {
                   console.log(JSON.stringify(result));
                   console.log(result.response.oplResultado);
                   console.log(result.response.opcMensaje);
-
                 }, error => {
                      console.log("ERROR: ", error);
                     });

@@ -20,12 +20,13 @@ export class GiroComponent implements OnInit {
     public todoList: Array<Todo>;
     public isEditing: boolean;
     giro: Giro;
-    mensaje: GiroService;
-    constructor(private getquot: GiroService, private giroService : GiroService) {
+
+    constructor( private giroService : GiroService) {
         this.giro = new Giro();
         this.giroService.getQuote();
         this.todoList = new Array<Todo>();
         this.isEditing = false;
+        
     }
 
     ngOnInit() {
