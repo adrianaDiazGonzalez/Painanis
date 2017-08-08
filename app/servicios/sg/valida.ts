@@ -11,7 +11,7 @@ export class ValidaService {
   public constructor(private http: Http) {}
   
   //Llamado al servicio REST "get"
-    getQuote(ipcCP: string) {
+    getQuote(ipcCP: string) :Promise <string>{
       console.log("parametro:", ipcCP);
       let retorno;
         let headers = new Headers();
