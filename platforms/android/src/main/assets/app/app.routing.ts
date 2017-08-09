@@ -7,7 +7,7 @@ import { RegistroComponent}  from  "./plantillas/sg/registro.component"
 
 export const routes = [
      { path: "",               component: MenuComponent },
-     { path: "ope/categoria",  component: CategoriaComponent },
+     { path: "ope/categoria",  component: CategoriaComponent},
      { path: "ct/giro",        component: GiroComponent },
      { path: "sg/valida",      component: ValidaComponent},
      { path: "sg/usuario",     component: LoginComponent},

@@ -10,6 +10,8 @@ import { Router } from "@angular/router";
     <Button text = "Giro"       class="boton" (tap)="giro()"></Button>
     <Button text = "Validar"     class="boton" (tap)="validar()"></Button>
     <Button text = "Categorias" class="boton" (tap)="cat()"></Button>
+    <Button text = "Usuario"    class="boton" (tap)="usuario()"></Button>
+    <Button text = "Registro"    class="boton" (tap)="registro()"></Button>
      </StackLayout>
   </ScrollView>
   `
@@ -32,5 +34,13 @@ export class MenuComponent {
   cat()
     {
       this.router.navigate(["/ope/categoria"]);
+    }
+    usuario()
+    {
+      this.router.navigate(["/sg/usuario"]);
+    }
+     registro()
+    {
+      this.router.navigate(["/sg/registro"]);
     }
 }

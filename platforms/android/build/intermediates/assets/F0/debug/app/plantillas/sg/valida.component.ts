@@ -2,8 +2,8 @@ import { Component } from "@angular/core";
 import { ValidaService } from "../../servicios/sg/valida";
 import { Router } from "@angular/router";
 import { Http } from "@angular/http";
-import * as Dialogs from "ui/dialogs";
-//import * as XmlObjects from "@angular/xmlobjects";
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
 
 
 //Declaración de los componentes de la vista
@@ -17,7 +17,8 @@ import * as Dialogs from "ui/dialogs";
 
 export class ValidaComponent {
   cp="";
-  constructor(private router: Router,private validaService: ValidaService){
+  constructor(private router: Router,
+    private validaService: ValidaService){  
   }
   
   validar()
@@ -29,12 +30,15 @@ export class ValidaComponent {
       } 
       //var result = this.validaService.getQuote(this.cp);
 
-      console.log("resultado lado vista", this.validaService.getQuote(this.cp))
-
-      /*if(result.opcMensaje)
-            {
-              alert(result.response.opcMensaje)
+      console.log("vista", this.validaService.getQuote(this.cp)
+          .then
+          (
+            (cp)=> {
+              this.cp = this.cp;
+            
             }
-    */
-  }
+          )
+          
+      )
+   }
 }

@@ -10,19 +10,28 @@ export class GiroService {
 
   //constructor del http para los servicios REST
   constructor(private http: Http) {}
-  
 
   //Llamado al servicio REST "get"
-    getQuote() {
-        let headers = new Headers();
-        headers.append("Content-Type", "application/json");
+    getQuote(){
+      let headers = new Headers();
+      let resultado;
+      headers.append("Content-Type", "application/json");
       this.http.get("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctGiro_gen")
-      .map(response => response.json())
-      .subscribe(result => {
-          console.log(JSON.stringify(result));
-        }, error => {
-             console.log("ERROR: ", error);
-            });
+        .map(response => response.json())
+          .subscribe(result => {
+            console.log("Servicio",JSON.stringify(result));
+            resultado = JSON.stringify(result);
+          }, error => {
+              console.log("ERROR: ", error);});
+          console.log("Servico resultado",resultado);                
+      return Promise.resolve(resultado);
+    }
+
+    getQuoteRetardo():Promise<string> {
+      return new Promise<string>(
+            (resolve) => {
+              setTimeout(resolve,500)
+            }).then(()=> this.getQuote());
     }
 
     //Llamado al servicio REST "post"
@@ -30,7 +39,6 @@ export class GiroService {
        var tt_ctGiro = [giro];
        var ttctRegistro  = [giro];
        console.log(tt_ctGiro)
-       
 
       console.log( JSON.stringify({ "request" : 
                           {"dtGiro" :

@@ -39,7 +39,7 @@ export class RegistroComponent {
              this.secondSwitchState = true;   
         }
     }
-    /*
+    
     onPickerLoaded(args) {
         let datePicker = <DatePicker>args.object;
         datePicker.year = 1970;
@@ -50,26 +50,26 @@ export class RegistroComponent {
     onDateChanged(args) {
         /*console.log("Date changed");
         console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);
+        console.log("Old value: " + args.oldValue);*/
     }
 
     onDayChanged(args) {
         /*console.log("Day changed");
         console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);
+        console.log("Old value: " + args.oldValue);*/
     }
 
     onMonthChanged(args) {
        /* console.log("Month changed");
         console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);
+        console.log("Old value: " + args.oldValue);*/
     }
 
     onYearChanged(args) {
      /*   console.log("Year changed");
         console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);
-    }   */
+        console.log("Old value: " + args.oldValue);*/
+    }
 
 
 }

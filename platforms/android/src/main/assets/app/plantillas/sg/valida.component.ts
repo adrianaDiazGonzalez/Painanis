@@ -17,28 +17,16 @@ import 'rxjs/add/operator/toPromise';
 
 export class ValidaComponent {
   cp="";
-  constructor(private router: Router,
-    private validaService: ValidaService){  
+  constructor(private router: Router,private validaService: ValidaService){  
   }
   
   validar()
   {
-     if(this.cp == null || this.cp =="")
+    if(this.cp == null || this.cp =="")
       {
-       alert("Ingrese un Código Postal");
-       return;
+        alert("Ingrese un Código Postal");
+        return;
       } 
-      //var result = this.validaService.getQuote(this.cp);
-
-      console.log("vista", this.validaService.getQuote(this.cp)
-          .then
-          (
-            (cp)=> {
-              this.cp = this.cp;
-            
-            }
-          )
-          
-      )
-   }
+      var result = this.validaService.getQuote(this.cp);
+  }
 }
