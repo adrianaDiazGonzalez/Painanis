@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxhdpi\\logo.png",
+        "source": "C:\\git\\Painanis\\platforms\\android\\src\\main\\res\\drawable-xxhdpi\\logo.png"
+    },
+    {
+        "merged": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxhdpi\\background.png",
+        "source": "C:\\git\\Painanis\\platforms\\android\\src\\main\\res\\drawable-xxhdpi\\background.png"
+    }
+]

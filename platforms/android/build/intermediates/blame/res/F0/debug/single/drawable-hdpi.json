@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-hdpi\\background.png",
+        "source": "C:\\git\\Painanis\\platforms\\android\\src\\main\\res\\drawable-hdpi\\background.png"
+    },
+    {
+        "merged": "C:\\git\\Painanis\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-hdpi\\logo.png",
+        "source": "C:\\git\\Painanis\\platforms\\android\\src\\main\\res\\drawable-hdpi\\logo.png"
+    }
+]

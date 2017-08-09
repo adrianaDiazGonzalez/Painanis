@@ -1,0 +1,30 @@
+<ScrollView>
+   <StackLayout>
+    <ActionBar title="Registro" class="action-bar"></ActionBar>
+     
+     <TextField hint="Nombre"           [(ngModel)]="registro.nombre"></TextField>
+     <TextField hint="Apellido Paterno" [(ngModel)]="registro.apaterno" ></TextField>
+     <TextField hint="Apellido Materno" [(ngModel)]="registro.amaterno"></TextField>
+
+     <Label text="Genero"  horizontalAlignment="left" > </Label >
+
+     <DockLayout rows="auto auto" columns="* *" >
+        <Image src="~/images/men.png"   class= "genero" textWrap="true"  row="0" col="0" horizontalAlignment="left" ></Image>  
+        <Switch checked="false" (checkedChange)="onFirstChecked($event)" row="0" col="1" horizontalAlignment="right" [(ngModel)]="registro.genero" ></Switch>
+        <Image src="~/images/girl.png" class= "genero" textWrap="true"   row="0" col="2" horizontalAlignment="left"  ></Image> 
+        
+     </DockLayout>
+
+     <Label text="Fecha de Nacimiento" horizontalAlignment="left"> </Label>
+     <DatePicker (loaded)="onPickerLoaded($event)" (dateChange)="onDateChanged($event)" 
+     (dayChange)="onDayChanged($event)" (monthChange)="onMonthChanged($event)" (yearChange)="onYearChanged($event)" [(ngModel)]="registro.fechanac" ></DatePicker>
+     
+    
+     <TextField hint="Edad"                      [(ngModel)]="registro.edad"></TextField>
+     <TextField hint="Telefono"                  [(ngModel)]="registro.telefono"></TextField>
+     <TextField hint="Correo  *Opcional "        [(ngModel)]="registro.correo"></TextField>
+     <TextField hint="Nombre de usuario"         [(ngModel)]="registro.usuario"></TextField>
+     <TextField hint="Contraseña" secure="true"  [(ngModel)]="registro.constrasena"> </TextField> 
+     <Button [text]="'Registrar'" class="submit-button" (tap)="submit()"></Button>     
+</StackLayout>
+  </ScrollView>
