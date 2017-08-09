@@ -15,18 +15,31 @@ import { HttpModule, Http } from '@angular/http';
     
 })
 
-
 export class GiroComponent implements OnInit {
     public todoList: Array<Todo>;
     public isEditing: boolean;
-    giro: Giro;
+    giro: Giro; 
+    resultado: String;
 
     constructor( private giroService : GiroService) {
         this.giro = new Giro();
-        this.giroService.getQuote();
+        //this.giroService.getQuote();
+        //console.log("Vista",this.resultado.response);
+        this.getGiros();
+        console.log(this.resultado);
         this.todoList = new Array<Todo>();
         this.isEditing = false;
         
+    }
+    
+    getGiros():void{
+        this.giroService.getQuoteRetardo()
+            .then(
+                (giros) =>{
+                    this.resultado = giros;
+                }
+            );    
+             
     }
 
     ngOnInit() {

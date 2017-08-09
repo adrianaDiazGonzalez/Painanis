@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Registro = (function () {
+    function Registro() {
+    }
+    return Registro;
+}());
+exports.Registro = Registro;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVnaXN0cm8uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJyZWdpc3Ryby50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBO0lBQUE7SUFhQSxDQUFDO0lBQUQsZUFBQztBQUFELENBQUMsQUFiRCxJQWFDO0FBYlksNEJBQVEiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuZXhwb3J0IGNsYXNzIFJlZ2lzdHJvIHtcclxuXHJcbiAgbm9tYnJlOiAgICAgc3RyaW5nO1xyXG4gIGFwYXRlcm5vOiAgIHN0cmluZztcclxuICBhbWF0ZXJubzogICBzdHJpbmc7XHJcbiAgZ2VuZXJvOiAgICAgYm9vbGVhbjtcclxuICBmZWNoYW5hYzogICBEYXRlO1xyXG4gIGVkYWQ6ICAgICAgIHN0cmluZztcclxuICB0ZWxlZm9ubzogICBzdHJpbmc7XHJcbiAgY29ycmVvOiAgICAgc3RyaW5nO1xyXG4gIHVzdWFyaW86ICAgIHN0cmluZztcclxuICBjb250cmFzZW5hOiBzdHJpbmc7XHJcbiBcclxufSJdfQ==
