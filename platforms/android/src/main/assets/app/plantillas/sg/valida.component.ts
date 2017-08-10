@@ -1,3 +1,4 @@
+import { Page } from "ui/page";
 import { Component } from "@angular/core";
 import { ValidaService } from "../../servicios/sg/valida";
 import { Router } from "@angular/router";
@@ -11,13 +12,15 @@ import 'rxjs/add/operator/toPromise';
   selector: "my-app",
   providers: [ValidaService],
   templateUrl: "plantillas/sg/valida.html",
-  styleUrls: [ "plantillas/css/valida.css"]
+  styleUrls: [ "plantillas/css/valida.css","app.css"]
 })
 
 
 export class ValidaComponent {
   cp="";
-  constructor(private router: Router,private validaService: ValidaService){  
+  constructor(private page: Page, private router: Router,private validaService: ValidaService)
+  {
+    page.actionBarHidden = true;  
   }
   
   validar()
@@ -28,5 +31,10 @@ export class ValidaComponent {
         return;
       } 
       var result = this.validaService.getQuote(this.cp);
+  }
+  
+  sesion()
+  {
+     this.router.navigate(["sg/usuario"]);
   }
 }

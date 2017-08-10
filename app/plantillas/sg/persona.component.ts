@@ -1,9 +1,10 @@
 //importaciones de recursos a utilizar
+import { Page } from "ui/page";
 import { Component } from "@angular/core";
-import { Registro } from "../../modelos/sg/registro";
-import { RegistroService } from "../../servicios/sg/registro";
-import * as datePickerModule from "tns-core-modules/ui/date-picker";
+import { Persona } from "../../modelos/sg/persona";
+import { PersonaService } from "../../servicios/sg/persona";
 import { DatePicker } from "ui/date-picker";
+import * as datePickerModule from "tns-core-modules/ui/date-picker";
 import { EventData } from "data/observable";
 import { Switch } from "ui/switch";
 
@@ -11,24 +12,39 @@ import { Switch } from "ui/switch";
 //Declaración de los componentes de la vista
 @Component({
   selector: "my-app",
-  providers: [RegistroService],
-  templateUrl:"plantillas/sg/registro.html",
-  styleUrls: ["plantillas/css/registro.css"]
+  providers: [PersonaService],
+   moduleId: module.id,
+  templateUrl:"persona.html",
+  styleUrls: ["../css/persona.css", "../../app.css"]
 })
 
-export class RegistroComponent {
+export class PersonaComponent {
     public firstSwitchState = false;
     public secondSwitchState = true;
-    registro: Registro;
+    persona: Persona;
 
-    constructor(private registroService: RegistroService) {
-        this.registro = new Registro();
-        this.registro.genero=false;
+    constructor(private page: Page, private personaService: PersonaService) {
+        page.actionBarHidden = true;  
+        this.persona = new Persona();
+        this.persona.persona="0";
+        this.persona.tipoPersona="1";
+       /* this.persona.nombre="";
+        this.persona.apaterno="";
+        this.persona.amaterno="";*/
+        this.persona.genero=false;
+        this.persona.fechanac= "18/08/1992";
+       /* this.persona.edad="";
+        this.persona.telefono="";
+        this.persona.correo="";
+        this.persona.usuario="";
+        this.persona.contrasena="";*/
+        this.persona.activo= true;
+        
+       
     }
     
     submit(){
-        console.log("HOLA");
-        this.registroService.postQuote(this.registro);
+        this.personaService.postQuote(this.persona);
     }
     
     public onFirstChecked(args) {
@@ -59,7 +75,7 @@ export class RegistroComponent {
         console.log("Old value: " + args.oldValue);*/
     }
 
-    onMonthChanged(args) {
+   onMonthChanged(args) {
        /* console.log("Month changed");
         console.log("New value: " + args.value);
         console.log("Old value: " + args.oldValue);*/
@@ -69,7 +85,8 @@ export class RegistroComponent {
      /*   console.log("Year changed");
         console.log("New value: " + args.value);
         console.log("Old value: " + args.oldValue);*/
-    }
-
-
+   }
 }
+
+
+

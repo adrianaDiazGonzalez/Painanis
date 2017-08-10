@@ -41,6 +41,6 @@ export class MenuComponent {
     }
      registro()
     {
-      this.router.navigate(["/sg/registro"]);
+      this.router.navigate(["/sg/persona"]);
     }
 }

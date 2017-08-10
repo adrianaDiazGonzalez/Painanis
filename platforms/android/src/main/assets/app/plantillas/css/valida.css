@@ -24,4 +24,9 @@ StackLayout {
     margin-left: 30;
     margin-right: 30;
     margin-bottom: 50;  
-}   
+}
+.text{
+  color:#E73C3E;
+  font-size: 22;
+  margin-top: 170;
+}

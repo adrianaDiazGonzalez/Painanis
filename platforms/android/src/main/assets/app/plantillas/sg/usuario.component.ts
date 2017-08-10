@@ -1,4 +1,5 @@
 //importaciones de recursos a utilizar
+import { Page } from "ui/page";
 import { Component } from "@angular/core";
 import { UserService } from "../../servicios/sg/usuario";
 import { Router } from "@angular/router";
@@ -15,17 +16,12 @@ import { ttctPersona } from "../../modelos/sg/usuario";
 //Clase para las acciones de los botones
 export class LoginComponent {
   usuario: ttctPersona; 
-  constructor( private router: Router, private userService: UserService) {
+  constructor(private page: Page, private router: Router, private userService: UserService) {
+    page.actionBarHidden = true;
   this.usuario = new ttctPersona();
   }
-
-  registro()
-  {
-    var relacion = ['Hola','HOLA'];
-    console.log(relacion);
-    this.router.navigate(["/registro"]);
-  }
-
+   /* var relacion = ['Hola','HOLA'];
+    console.log(relacion);*/
   submit()
    {
     //alert("You’re using: " + this.email);
@@ -39,10 +35,10 @@ export class LoginComponent {
   validar(){
     var bandera = false;
     var emailRegex;
-    console.log(this.usuario.iUsuario);
     console.log(this.usuario.cUsuario);
+    console.log(this.usuario.cContrasena);
 
-    if(this.usuario.iUsuario == null || this.usuario.iUsuario == ""){
+    if(this.usuario.cUsuario == null || this.usuario.cUsuario == ""){
       bandera = true;
       alert("Ingresa nombre de usuario por favor");
     }else{
@@ -53,11 +49,12 @@ export class LoginComponent {
       }*/ 
     } 
 
-    if (this.usuario.cUsuario == null || this.usuario.cUsuario == ""){
+    if (this.usuario.cContrasena == null || this.usuario.cContrasena == ""){
       bandera = true;
       alert("Ingresa una contraseña por favor");
     }
     return bandera;
   }
+  
 }
   

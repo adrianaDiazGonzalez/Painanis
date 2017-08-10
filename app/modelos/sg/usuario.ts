@@ -1,5 +1,5 @@
 export class ttctPersona {
-  iUsuario: string;
-  cUsuario: string;
+  cUsuario:     string;
+  cContrasena: string;
  
 }

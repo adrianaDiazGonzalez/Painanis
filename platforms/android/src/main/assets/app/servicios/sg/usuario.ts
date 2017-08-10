@@ -25,22 +25,20 @@ export class UserService {
     //Llamado al servicio REST "post"  
     postQuote(usuario: ttctPersona) {
        var ttctPersona = [usuario];
-       var ttctRegistro  = [usuario];
+      
        console.log(ttctPersona)
        
 
       console.log( JSON.stringify({ "request" : 
-                          {"tt_ctPersona" :
-                            {ttctPersona,ttctRegistro}
-                          }
+                          {"ipcUsuario": usuario.cUsuario ,
+                           "ipcContrasena": usuario.cContrasena}
                         }))
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
-        this.http.post("http://192.168.2.153:8810/Pruebas/rest/Evento/Post", 
-        JSON.stringify({ "request" : 
-                          {"tt_ctPersona" :
-                            {ttctPersona,ttctRegistro}
-                          }
+        this.http.post("http://192.168.2.153:8810/Painanis/rest/painanis/as_sgSesion_gen", 
+       JSON.stringify({ "request" : 
+                          {"ipcUsuario": usuario.cUsuario ,
+                           "ipcContrasena": usuario.cContrasena}
                         }), 
               { headers: headers })
               
