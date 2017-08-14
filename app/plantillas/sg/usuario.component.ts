@@ -42,12 +42,6 @@ export class LoginComponent {
     if(this.usuario.cUsuario == null || this.usuario.cUsuario == ""){
       bandera = true;
       alert("Ingresa nombre de usuario por favor");
-    }else{
-      /*emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-      if(!emailRegex.test(this.usuario.email)){
-        bandera = true;
-        alert("Ingresa un nombre de usuario valido");
-      }*/ 
     } 
 
     if (this.usuario.cContrasena == null || this.usuario.cContrasena == ""){
@@ -55,6 +49,10 @@ export class LoginComponent {
       alert("Ingresa una contraseña por favor");
     }
     return bandera;
+  }
+
+  contrasena(){
+    this.router.navigate(["sg/usuario"]);
   }
   
 }

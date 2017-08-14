@@ -1,0 +1,12 @@
+<ScrollView>
+   <StackLayout>
+        <Image src="~/images/pass.png" class="pass" horizontalAlignment="center"  ></Image>
+        <label  text="Debe ingresar su Usuario y su Telefono/Correo para restablecer su contraseña" horizontalAlignment="left"></label>
+        <TextField hint="Usuario" [(ngModel)]="usuario.cUsuario"
+        autocorrect="false" autocapitalizationType="none"></TextField >
+        <TextField hint="Telefono" [(ngModel)]="usuario.cTelefono"></TextField >
+        <TextField hint="Correo" [(ngModel)]="usuario.cUsuario"></TextField >
+        
+        <Button [text]="isLoggingIn ? 'Sign in' : 'Recuperar'" class="submit-button" (tap)="submit()"></Button>
+  </StackLayout>
+</ScrollView>

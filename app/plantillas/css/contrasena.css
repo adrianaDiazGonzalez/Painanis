@@ -1,0 +1,13 @@
+Page {
+  background-color: white;
+  font-size: 17;
+}
+.submit-button {
+  background-color: #E73C3E ;
+  color:white;
+  margin-top: 20;
+  width: 50%;
+}
+.pass{
+  width: 50%;
+}
