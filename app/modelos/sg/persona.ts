@@ -1,19 +1,19 @@
 
 export class Persona {
-  persona:     string;
-  tipoPersona: string;
-  nombre:      string;
-  apaterno:    string;
-  amaterno:    string;
-  genero:      boolean;
-  fechanac:    string;
-  edad:        string;
-  telefono:    string;
-  correo:      string;
-  usuario:     string;
-  contrasena:  string;
-  activo:      boolean;
-  creado:      string;
-  modificado:  string;
+  iPersona:     string;
+  iTipoPersona: string;
+  cNombre:      string;
+  cApaterno:    string;
+  cAmaterno:    string;
+  lGenero:      boolean;
+  dtFechaNac:   string;
+  cEdad:        string;
+  cTelefono:    string;
+  cCorreo:      string;
+  cUsuario:     string;
+  cContrasena:  string;
+  lActivo:      boolean;
+  dtCreado:     string;
+  dtModificado: string;
  
 }

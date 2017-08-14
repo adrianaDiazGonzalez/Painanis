@@ -26,26 +26,61 @@ export class PersonaComponent {
     constructor(private page: Page, private personaService: PersonaService) {
         page.actionBarHidden = true;  
         this.persona = new Persona();
-        this.persona.persona="0";
-        this.persona.tipoPersona="1";
-       /* this.persona.nombre="";
-        this.persona.apaterno="";
-        this.persona.amaterno="";*/
-        this.persona.genero=false;
-        this.persona.fechanac= "18/08/1992";
-       /* this.persona.edad="";
-        this.persona.telefono="";
-        this.persona.correo="";
-        this.persona.usuario="";
-        this.persona.contrasena="";*/
-        this.persona.activo= true;
-        
-       
+        this.persona.iPersona="0";
+        this.persona.iTipoPersona="1";
+        this.persona.lGenero=false;
+        this.persona.dtFechaNac="";
+        this.persona.lActivo= true;
     }
     
     submit(){
-        this.personaService.postQuote(this.persona);
-    }
+        //Código que condiciona al usuario a ingresar los datos que son obligatorios para el registro
+        //variables para validaciones
+        var bandera = false;
+        var emailRegex
+        //valida que se ingrese un Nombre
+        if(this.persona.cNombre == null || this.persona.cNombre == "")
+            {
+                alert("Ingrese un Nombre por favor");
+                return;
+            }
+            //Valida que se ingrese un Apellido Paterno
+            if(this.persona.cApaterno == null || this.persona.cApaterno == "")
+                {
+                    alert("Ingrese un Apellido Paterno por favor");
+                    return;
+                }
+            //Valida que se ingrese un Telefono
+            if(this.persona.cTelefono == null || this.persona.cTelefono == "")
+                {
+                    alert("Ingrese un Telefono por favor");
+                    return;
+                }
+            //Valida que se ingrese un Usuario
+            if(this.persona.cUsuario  == null || this.persona.cUsuario == "")
+            {
+            alert("Ingrese un Usuario por favor");
+             return;
+            }
+            //Valida que se ingrese una Contraseña
+            if (this.persona.cContrasena == null || this.persona.cContrasena == ""){
+                bandera = true;
+                alert("Ingrese una Contraseña por favor");
+                return;
+            }
+            //Valida que el correo que se ingresa tenga el formato de Email
+            emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+            if(this.persona.cCorreo != "" )
+            {
+                if(!emailRegex.test(this.persona.cCorreo)){
+                    bandera = true;
+                    alert("Ingrese correo valido");
+                    return;
+                }
+            }
+           //si todas las validaciones son correctas para a la insercion de datos  
+            this.personaService.postQuote(this.persona);
+        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     
     public onFirstChecked(args) {
         let firstSwitch = <Switch>args.object;
@@ -64,27 +99,15 @@ export class PersonaComponent {
     }
 
     onDateChanged(args) {
-        /*console.log("Date changed");
-        console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);*/
     }
 
     onDayChanged(args) {
-        /*console.log("Day changed");
-        console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);*/
     }
 
    onMonthChanged(args) {
-       /* console.log("Month changed");
-        console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);*/
     }
 
-    onYearChanged(args) {
-     /*   console.log("Year changed");
-        console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);*/
+    onYearChanged(args) {   
    }
 }
 

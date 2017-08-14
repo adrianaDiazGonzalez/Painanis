@@ -23,6 +23,7 @@ export class LoginComponent {
    /* var relacion = ['Hola','HOLA'];
     console.log(relacion);*/
   submit()
+  
    {
     //alert("You’re using: " + this.email);
     if(this.validar())

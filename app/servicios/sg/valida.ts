@@ -31,7 +31,7 @@ export class ValidaService
                 alert(result.response.opcMensaje)
               }
                else{
-                  this.router.navigate(["sg/registro"]);
+                  this.router.navigate(["sg/persona"]);
                 }
               }, error => {
                 console.log("ERROR: ", error);

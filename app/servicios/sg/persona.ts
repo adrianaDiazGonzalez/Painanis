@@ -26,6 +26,14 @@ export class PersonaService {
                   console.log(JSON.stringify(result));
                   console.log(result.response.oplResultado);
                   console.log(result.response.opcMensaje);
+
+                  if (result.response.opcMensaje != "")
+                    {
+                        alert("El usuario ya existe")
+                    }
+                    
+
+                    
                 }, error => {
                      console.log("ERROR: ", error);
                      });       

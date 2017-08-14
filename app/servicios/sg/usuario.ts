@@ -47,6 +47,10 @@ export class UserService {
                   console.log(JSON.stringify(result));
                   console.log(result.response.oplResultado);
                   console.log(result.response.opcMensaje);
+                  if(result.response.opcMensaje !="")
+                    {
+                      alert("Usuario y/o contraseña incorrectos")
+                    }
 
                 }, error => {
                      console.log("ERROR: ", error);

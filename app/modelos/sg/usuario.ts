@@ -1,5 +1,5 @@
 export class ttctPersona {
   cUsuario:     string;
-  cContrasena: string;
+  cContrasena:  string;
  
 }
