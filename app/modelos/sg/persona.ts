@@ -1,4 +1,4 @@
-
+//Declaracion de variables
 export class Persona {
   iPersona:     string;
   iTipoPersona: string;
@@ -15,5 +15,4 @@ export class Persona {
   lActivo:      boolean;
   dtCreado:     string;
   dtModificado: string;
- 
 }

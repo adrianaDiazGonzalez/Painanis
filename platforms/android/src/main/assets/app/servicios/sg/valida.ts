@@ -1,13 +1,12 @@
+//importaciones de recursos a utilizar
 import { Injectable } from "@angular/core";
 import { Http, Headers, Response } from "@angular/http";
 import { Observable } from "rxjs/Rx";
 import "rxjs/add/operator/do";
 import "rxjs/add/operator/map";
 import { Router } from "@angular/router";
-
 import 'rxjs/add/operator/toPromise';
-//Exportación de la clase usuario
-
+//Exportación de clases
 @Injectable()
 export class ValidaService
  {

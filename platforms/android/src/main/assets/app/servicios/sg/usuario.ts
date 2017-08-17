@@ -61,5 +61,4 @@ export class UserService {
                      console.log("ERROR: ", error);
                     });
     }
-
 }

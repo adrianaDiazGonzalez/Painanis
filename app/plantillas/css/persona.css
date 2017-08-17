@@ -1,18 +1,8 @@
-Page {
-  background-color: white;
-  font-size: 17;
-}
-
+/*Estilos de la vista*/
 TextField {
   margin:    5;
   padding:   10;
   font-size: 13;
-}
-StackLayout {
-  margin-left: 30;
-  margin-right: 30;
-  padding-bottom: 15;
-  background-color: white;
 }
 DatePicker{
   width: 80%;

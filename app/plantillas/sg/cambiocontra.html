@@ -1,9 +1,10 @@
 <ScrollView>
-   <StackLayout>
-        <Image src="~/images/pass.png" class="pass" horizontalAlignment="center"  ></Image>
-        <label  text="Ingrese su nueva contraseña " class= "info" horizontalAlignment="center"></label>
-        <TextField hint="Contraseña" [(ngModel)]="contrasena" ></TextField >
-        <TextField hint="Contraseña" [(ngModel)]="contrasenar"></TextField >
-        <Button [text]= "'Guardar'"  class="submit-button" (tap)="cambiar()"></Button>
+  <StackLayout>
+    <Image src="~/images/pass.png" class="pass" horizontalAlignment="center"></Image>
+    <label text="Ingrese su nueva contraseña " class="info" horizontalAlignment="center"></label>
+    <TextField hint="Contraseña" class="c1" [(ngModel)]="contrasena"></TextField>
+    <label text="Confirme su contraseña" class="info1" horizontalAlignment="center"></label>
+    <TextField hint="Contraseña" [(ngModel)]="contrasenar"></TextField>
+    <Button [text]="'Guardar'" class="submit-button" (tap)="cambiar()"></Button>
   </StackLayout>
 </ScrollView>

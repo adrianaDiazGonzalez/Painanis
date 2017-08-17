@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-
+import { Page } from "ui/page";
 @Component({
   selector: "my-app",
   template: `
@@ -8,5 +8,9 @@ import { Component } from "@angular/core";
   `
 })
 export class CategoriaComponent {
+
+   constructor(private page: Page) {
+    page.actionBarHidden = true; //sirve para ocultar la barra de titulo de la ventana
+  }
 
 }

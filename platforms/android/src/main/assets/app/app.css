@@ -1,9 +1,16 @@
-/*@import "nativescript-theme-core/css/core.light.css";*/
-
-
+/*Estilos generales.. van en todas las vistas de la aplicacion*/
+Page {
+  background-color: white;
+  font-size: 17;
+}
 StackLayout {
   margin-left: 0;
   margin-right: 0;
   padding-bottom: 15;
   background-color: white;
+}
+TextField {
+  margin:    5;
+  padding:   10;
+  font-size: 13;
 }

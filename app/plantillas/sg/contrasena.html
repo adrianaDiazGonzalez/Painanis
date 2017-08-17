@@ -1,12 +1,11 @@
 <ScrollView>
-   <StackLayout>
-        <Image src="~/images/buscar.png" class="look" horizontalAlignment="center"  ></Image>
-        <label  text="Debe ingresar su Usuario y Telefono/Correo " class= "info" horizontalAlignment="center"></label>
-        <TextField hint="Usuario" [(ngModel)]="usuario.cUsuario"
-        autocorrect="false" autocapitalizationType="none"></TextField >
-        <TextField hint="Telefono" [(ngModel)]="usuario.cTelefono"  keyboardType= "Number"></TextField >
-        <TextField hint="Correo" [(ngModel)]="usuario.cCorreo"></TextField >
-        
-        <Button [text]="isLoggingIn ? 'Sign in' : 'Recuperar'" class="submit-button" (tap)="submit()"></Button>
+  <StackLayout>
+    <Image src="~/images/buscar.png" class="look" horizontalAlignment="center"></Image>
+    <label text="Debe ingresar su Usuario y Telefono/Correo " class="info" horizontalAlignment="center"></label>
+    <TextField hint="Usuario" [(ngModel)]="usuario.cUsuario" autocorrect="false" autocapitalizationType="none"></TextField>
+    <TextField hint="Telefono" [(ngModel)]="usuario.cTelefono" keyboardType="Number"></TextField>
+    <TextField hint="Correo" [(ngModel)]="usuario.cCorreo"></TextField>
+
+    <Button [text]="isLoggingIn ? 'Sign in' : 'Recuperar'" class="submit-button" (tap)="submit()"></Button>
   </StackLayout>
 </ScrollView>

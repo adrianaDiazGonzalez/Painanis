@@ -1,7 +1,4 @@
-Page {
-  background-color: white;
-  font-size: 17;
-}
+/*Estilo de la vista*/
 .submit-button {
   background-color: #E73C3E ;
   color:white;
@@ -15,9 +12,8 @@ Page {
     margin-right: 20;
     margin-bottom: 40;  
 }
-  .info{
+.info{
     margin-top: 40;
     margin-bottom: 50;
     font: caption bold;
-
-  }
+}
