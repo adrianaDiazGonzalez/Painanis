@@ -5,12 +5,13 @@ import { Observable } from "rxjs/Rx";
 import "rxjs/add/operator/do";
 import "rxjs/add/operator/map";
 import { ttctPersona } from "../../modelos/sg/usuario";
+import { Router } from "@angular/router";
 //Exportación de la clase usuario
 @Injectable()
 export class UserService {
 
   //constructor del http para los servicios REST
-  constructor(private http: Http) {}
+  constructor(private http: Http,  private router: Router) {}
   
   //Llamado al servicio REST "get"
     getQuote() {
@@ -51,6 +52,9 @@ export class UserService {
                     {
                       alert("Usuario y/o contraseña incorrectos");
                       return;
+                    }
+                    else{
+                        this.router.navigate(["ope/categoria"]);
                     }
 
                 }, error => {

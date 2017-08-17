@@ -24,7 +24,7 @@ export class LoginComponent {
     console.log(relacion);*/
   submit()
   {
-    var emailRegex;
+    
 
     if(this.usuario.cUsuario == null || this.usuario.cUsuario == ""){
       

@@ -5,12 +5,15 @@ import { Observable } from "rxjs/Rx";
 import "rxjs/add/operator/do";
 import "rxjs/add/operator/map";
 import { Password} from "../../modelos/sg/contrasena";
+import { Router } from "@angular/router";
 //Exportación de la clase usuario
 @Injectable()
 export class PasswordService {
 
+  usuario1;
+
   //constructor del http para los servicios REST
-  constructor(private http: Http) {}
+  constructor(private http: Http, private router: Router) {}
   
   //Llamado al servicio REST "get"
     getQuote(usuario: Password) {
@@ -18,13 +21,13 @@ export class PasswordService {
           headers.append("ipcUsuario",  usuario.cUsuario);
           headers.append("ipcTelefono", usuario.cTelefono);
           headers.append("ipcCorreo",   usuario.cCorreo);
-
+          
           console.log("headers", headers.values());
-
-      console.log("usuario", usuario.cUsuario);
-      console.log("telefono", usuario.cTelefono);
-      console.log("correo", usuario.cCorreo);
-      this.http.get("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctPersona_gen",
+          console.log("usuario",  usuario.cUsuario);
+          console.log("telefono", usuario.cTelefono);
+          console.log("correo",   usuario.cCorreo);
+      this.http.get("http://192.168.2.153:8810/Painanis/rest/painanis/as_sgSesion_gen",
+      
     { headers: headers })
       .map(response => response.json())
       .subscribe(result => {
@@ -34,8 +37,9 @@ export class PasswordService {
               alert("Datos incorrectos");
             } 
             else{
-              
-            }
+              this.usuario1 = usuario.cUsuario;
+              this.router.navigate(["sg/cambio"]);
+               }
           }, error => {
              console.log("ERROR: ", error);
             });

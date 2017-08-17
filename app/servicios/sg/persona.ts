@@ -4,10 +4,11 @@ import { Observable } from "rxjs/Rx";
 import "rxjs/add/operator/do";
 import "rxjs/add/operator/map";
 import { Persona } from "../../modelos/sg/persona";
+import { Router } from "@angular/router";
 
 @Injectable()
 export class PersonaService {
-    constructor(private http: Http) {}
+    constructor(private http: Http, private router: Router) {}
     postQuote(persona: Persona) {
         var tt_ctPersona = [persona];
         
@@ -30,6 +31,9 @@ export class PersonaService {
                   if (result.response.opcMensaje != "")
                     {
                         alert("El usuario ya existe")
+                    }
+                    else{
+                        this.router.navigate(["ope/categoria"]);
                     }
                     
 

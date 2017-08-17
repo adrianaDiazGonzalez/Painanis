@@ -4,7 +4,9 @@ import { MenuComponent}      from  "./plantillas/menu/menu.component"
 import { ValidaComponent}    from  "./plantillas/sg/valida.component"
 import { LoginComponent}     from  "./plantillas/sg/usuario.component"
 import { PersonaComponent}   from  "./plantillas/sg/persona.component"
-import { PasswordComponent}   from  "./plantillas/sg/contrasena.component"
+import { PasswordComponent}  from  "./plantillas/sg/contrasena.component"
+import { ChanceComponent}    from  "./plantillas/sg/cambiocontra.component"
+
 
 export const routes = [
      { path: "",               component: MenuComponent },
@@ -13,7 +15,8 @@ export const routes = [
      { path: "sg/valida",      component: ValidaComponent},
      { path: "sg/usuario",     component: LoginComponent},
      { path: "sg/persona",     component: PersonaComponent},
-     { path: "sg/contrasena",  component: PasswordComponent}
+     { path: "sg/contrasena",  component: PasswordComponent},
+     { path: "sg/cambio",      component: ChanceComponent}
     
 ];
 
@@ -24,6 +27,7 @@ export const navigatableComponents = [
     ValidaComponent,
     LoginComponent,
     PersonaComponent,
-    PasswordComponent
+    PasswordComponent,
+    ChanceComponent
     
 ];
