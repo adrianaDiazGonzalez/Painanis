@@ -8,7 +8,7 @@ import {Chance}   from "../../modelos/sg/cambiocontrasena";
 
 //Exportación de la clase usuario
 @Injectable()
-export class ChanceService {
+export class ChanceService {  
   resultado;
   //constructor del http para los servicios REST y del ruteo
   constructor(private http: Http, private router: Router) {}
