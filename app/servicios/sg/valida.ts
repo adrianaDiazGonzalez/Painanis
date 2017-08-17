@@ -28,7 +28,7 @@ export class ValidaService
             //Condicion del resultado de la busqueda de los codigos postales
              if(result.response.opcMensaje != "")
               {
-                alert(result.response.opcMensaje)
+                alert("Codigo Postal no valido");
               }
                else{
                   this.router.navigate(["sg/persona"]);

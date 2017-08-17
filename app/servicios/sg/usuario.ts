@@ -49,7 +49,8 @@ export class UserService {
                   console.log(result.response.opcMensaje);
                   if(result.response.opcMensaje !="")
                     {
-                      alert("Usuario y/o contraseña incorrectos")
+                      alert("Usuario y/o contraseña incorrectos");
+                      return;
                     }
 
                 }, error => {

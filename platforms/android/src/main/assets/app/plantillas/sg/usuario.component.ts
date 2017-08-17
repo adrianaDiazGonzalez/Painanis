@@ -23,38 +23,26 @@ export class LoginComponent {
    /* var relacion = ['Hola','HOLA'];
     console.log(relacion);*/
   submit()
-  
-   {
-    //alert("You’re using: " + this.email);
-    if(this.validar())
-      {
-      return;
-      }
-     this.userService.postQuote(this.usuario);
-    }
-
-  validar(){
-    var bandera = false;
+  {
     var emailRegex;
-    console.log(this.usuario.cUsuario);
-    console.log(this.usuario.cContrasena);
 
     if(this.usuario.cUsuario == null || this.usuario.cUsuario == ""){
-      bandera = true;
+      
       alert("Ingresa nombre de usuario por favor");
-    }else{
-      /*emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-      if(!emailRegex.test(this.usuario.email)){
-        bandera = true;
-        alert("Ingresa un nombre de usuario valido");
-      }*/ 
+      return;
     } 
 
     if (this.usuario.cContrasena == null || this.usuario.cContrasena == ""){
-      bandera = true;
+      
       alert("Ingresa una contraseña por favor");
+      return;
     }
-    return bandera;
+    this.userService.postQuote(this.usuario);
+    
+  }
+
+  contrasena(){
+    this.router.navigate(["sg/contrasena"]);
   }
   
 }
