@@ -12,30 +12,26 @@ import 'rxjs/add/operator/toPromise';
   selector: "my-app",
   providers: [ValidaService],
   templateUrl: "plantillas/sg/valida.html",
-  styleUrls: [ "plantillas/css/valida.css","app.css"]
+  styleUrls: ["plantillas/css/valida.css", "app.css"]
 })
 
 //Acciones y procesos de la ventana 
 export class ValidaComponent {
   //Declaracion de variables
-  cp="";
-   //constructor
-  constructor(private page: Page, private router: Router,private validaService: ValidaService)
-  {
-    page.actionBarHidden = true;  
+  cp = "";
+  //constructor
+  constructor(private page: Page, private router: Router, private validaService: ValidaService) {
+    page.actionBarHidden = true;
   }
   //Acciones o procesos
-  validar()
-  {
-    if(this.cp == null || this.cp =="")
-      {
-        alert("Ingrese un Código Postal");
-        return;
-      } 
-      var result = this.validaService.getQuote(this.cp);
+  validar() {
+    if (this.cp == null || this.cp == "") {
+      alert("Ingrese un Código Postal");
+      return;
+    }
+    var result = this.validaService.getQuote(this.cp);
   }
-  sesion()
-  {
-     this.router.navigate(["sg/usuario"]);
+  sesion() {
+    this.router.navigate(["sg/usuario"]);
   }
 }

@@ -1,0 +1,16 @@
+<ScrollView>
+    <StackLayout>
+        <DockLayout>
+            <Image src="~/images/go.png" col="0" row="0" class="back" (tap)="back()" horizontalAlignment="left"></Image>
+            <SearchBar class="busca" col="0" row="0" colSpan="1" hint="Search" horizontalAlignment="center" text="" clear="onClear" submit="onSubmit">
+            </SearchBar>/>
+        </DockLayout>
+        <WrapLayout [ngGrid]="{'resizeable': false, 'margins': [20, 50]}">
+            <WrapLayout *ngFor="let todo of todoList" rows="auto" columns="auto, *, auto, auto" class="for">
+                <WrapLayout>
+                    <Label *ngIf="!todo.lEditar" row="0" col="1" [text]="todo.cGiro" [class.done]="todo.done" textWrap="true"></Label>
+                </WrapLayout>
+            </WrapLayout>
+        </WrapLayout>
+    </StackLayout>
+</ScrollView>
