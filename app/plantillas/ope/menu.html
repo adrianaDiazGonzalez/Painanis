@@ -1,0 +1,28 @@
+<ScrollView>
+    <StackLayout>
+        <DockLayout>
+            <Image src="~/images/go.png" col="0" row="0" class="back" (tap)="back()" horizontalAlignment="left"></Image>
+            <label text="Registro de Dirección" class="info1" horizontalAlignment="center"></label>
+        </DockLayout>
+
+        <TextField hint="Código Postal" [(ngModel)]="contrasena"></TextField>
+        <TextField hint="Colonia" [(ngModel)]="contrasena"></TextField>
+        <TextField hint="Calle" [(ngModel)]="contrasena"></TextField>
+        <TextField hint="Num. Interior" [(ngModel)]="contrasena"></TextField>
+        <TextField hint="Num. Exterior" [(ngModel)]="contrasena"></TextField>
+        <TextField hint="Municipio" [(ngModel)]="contrasena"></TextField>
+        <TextField hint="Ciudad" [(ngModel)]="contrasena"></TextField>
+        <TextField hint="Estado" [(ngModel)]="contrasena"></TextField>
+        <TextField hint="Pais" [(ngModel)]="contrasena"></TextField>
+        
+
+        <WrapLayout>
+            <label text="Dirección de :"      class="inf" horizontalAlignment="center"></label>
+            <Image src="~/images/home.png"    class="img" (tap)="back()"></Image>
+            <Image src="~/images/oficina.png" class="img" (tap)="back()"></Image>
+            <Image src="~/images/abues.png"   class="img" (tap)="back()"></Image>
+            <Image src="~/images/novios.png"  class="img" (tap)="back()"></Image>
+            <Image src="~/images/amigos.png"  class="img" (tap)="back()"></Image>
+        </WrapLayout>
+    </StackLayout>
+</ScrollView>

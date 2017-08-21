@@ -1,18 +1,24 @@
-//importaciones de recursos a utilizar
-import { Page } from "ui/page";
-import { Component } from "@angular/core";
-import { MenuService} from "../../servicios/ope/menu";
+import { Component, ElementRef, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
+import { HttpModule, Http } from '@angular/http';
+import { Page } from "ui/page";
+import { MenuService } from "../../servicios/ope/menu";
 
-//Declaración de los componentes de la vista
+
+
 @Component({
     selector: "my-app",
     providers: [MenuService],
-    templateUrl: "plantillas/ope/men.html",
-    styleUrls: ["../css/men.css", "../../app.css"]
+    templateUrl: "plantillas/ope/menu.html",
+    styleUrls: ["plantillas/css/menu.css"]
 })
-//Acciones y procesos de la ventana 
+
 export class MenuComponent {
-    constructor(private page: Page, private router: Router) {
-}
+    constructor(private router: Router) {
+
+    }
+
+    back() {
+        this.router.navigate(["sg/usuario"]);
+    }
 }
