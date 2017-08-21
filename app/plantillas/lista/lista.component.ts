@@ -14,11 +14,12 @@ import { Router } from "@angular/router";
     <Button text = "Registro"    class="boton" (tap)="registro()"></Button>
     <Button text = "Contraseña"  class="boton" (tap)="contrasena()"></Button>
     <Button text = "Cambio de Contraseña"    class="boton" (tap)="cambio()"></Button>
+    <Button text = "Menu"        class="boton" (tap)="menu()"></Button>
      </StackLayout>
   </ScrollView>
   `
 })
-export class MenuComponent {
+export class ListaComponent {
 
   constructor( private router: Router){
 
@@ -52,5 +53,9 @@ export class MenuComponent {
      cambio()
     {
       this.router.navigate(["/sg/cambio"]);
+    }
+    menu()
+    {
+      this.router.navigate(["/ope/menu"]);
     }
 }

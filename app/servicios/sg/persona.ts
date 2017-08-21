@@ -37,7 +37,7 @@ export class PersonaService {
                     alert("El usuario ya existe")
                 }
                 else {
-                    this.router.navigate(["ope/categoria"]);
+                    this.router.navigate(["ope/menu"]);
                 }
             }, error => {
                 console.log("ERROR: ", error);
