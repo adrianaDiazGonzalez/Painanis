@@ -9,23 +9,21 @@ import { Domicilio } from "../../modelos/ope/menu";
 
 @Injectable()
 export class MenuService {
-
     //constructor del http para los servicios REST
     constructor(private http: Http, private router: Router) { }
-    postQuote(domicilio: Domicilio) {
+    postQuote(domicilio: Domicilio){
         var tt_ctDomicilio = [domicilio];
-        console.log(JSON.stringify({
+        console.log("Json", JSON.stringify({
             "request":
             {
                 "dsDomicilio":
                 { tt_ctDomicilio }
             }
         }));
-
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
-        this.http.post("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctPersona_gen",
-            JSON.stringify({ "request": { "dsPersona": { tt_ctDomicilio } } }),
+        this.http.post("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctDomicilio_gen",
+            JSON.stringify({ "request": { "dsDomicilio": { tt_ctDomicilio } } }),
             { headers: headers })
             .map(response => response.json())
             .subscribe(result => {
@@ -34,35 +32,30 @@ export class MenuService {
                 console.log(result.response.opcMensaje);
 
                 if (result.response.opcMensaje != "") {
-                    alert("Datos incorrectos");
+                    alert("estoy en post")
                 }
                 else {
-                    alert("Desea ingresar otra dirección ");
                     this.router.navigate(["ope/menu"]);
                 }
             }, error => {
                 console.log("ERROR: ", error);
             });
+       
+       
+       /* return Promise.resolve(this.http.post("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctDomicilio_gen",
+            JSON.stringify({ "request": { "dsDomicilio": { tt_ctDomicilio } } }),
+            { headers: headers }));*/
+
     }
 
-    validacp(ipcCP: string) {
-        let retorno;
+//Metodo para la validacion de codigo postal
+    validacp(ipcCP: string): Promise<any> {
         let headers = new Headers();
         headers.append("ipcCP", ipcCP);
         //llama al servicio REST
-        this.http.get("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctParametrosSis_gen",
-            { headers: headers })
-            .map(response => response.json())
-            .subscribe(result => {
-                //Condicion del resultado de la busqueda de los codigos postales
-                if (result.response.opcMensaje != "") {
-                    alert("Codigo Postal no valido");
-                    return;
-                }
-            }, error => {
-                console.log("ERROR: ", error);
-                retorno = error;
-            });
+        return Promise.resolve(this.http.get("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctParametrosSis_gen",
+            { headers: headers }));
     }
 }
+
 
