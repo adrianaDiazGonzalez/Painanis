@@ -4,6 +4,8 @@ import { HttpModule, Http } from '@angular/http';
 import { Page } from "ui/page";
 import { MenuService } from "../../servicios/ope/menu";
 import { Domicilio } from "../../modelos/ope/menu";
+import dialogs = require("ui/dialogs");
+
 
 @Component({
     selector: "my-app",
@@ -11,9 +13,15 @@ import { Domicilio } from "../../modelos/ope/menu";
     templateUrl: "plantillas/ope/menu.html",
     styleUrls: ["plantillas/css/menu.css"]
 })
-
 export class MenuComponent {
     domicilio: Domicilio;
+    public title: string;
+    public message: string;
+    public titleAlign?: string;
+    public messageAlign?: string;
+    public btnOkText?: string;
+    public btnCancelText?: string;
+
     constructor(private page: Page, private router: Router, private menuService: MenuService) {
         page.actionBarHidden = true; //sirve para ocultar la barra de titulo de la ventana
         this.domicilio = new Domicilio();
@@ -40,7 +48,6 @@ export class MenuComponent {
                         .subscribe(result => {
                             if (result.response.opcMensaje != "") {
                                 alert("Codigo Postal invalido");
-                            
                             }
                             else {
                                 //Valida que se ingrese Colonia
@@ -79,15 +86,27 @@ export class MenuComponent {
                                     return;
                                 }
                                 //Valida que se ingrese un Alias
-                               /* if (this.domicilio.iAlias == null || this.domicilio.iAlias == "") {
-                                    bandera = true;
-                                    alert("Ingrese un Alias por favor");
-                                    return;
-                                }*/
+                                /* if (this.domicilio.iAlias == null || this.domicilio.iAlias == "") {
+                                     bandera = true;
+                                     alert("Ingrese un Alias por favor");
+                                     return;
+                                 }*/
                                 //si todas las validaciones son correctas para a la insercion de datos 
                                 console.log("tabla", JSON.stringify(this.domicilio))
                                 this.menuService.postQuote(this.domicilio);
-                        
+                                dialogs.confirm({
+                                    title: "¿Desea ingresar otra direccion?",
+                                    okButtonText: "Si",
+                                    cancelButtonText: "No",
+                                }).then(r => {
+                                    console.log(r);
+                                    if (r) {
+                                        this.router.navigate(["ope/menu"]);
+                                    }
+                                    else {
+                                        this.router.navigate(["ope/categoria"]);
+                                    }
+                                });
                             }
                         }, error => {
                             JSON.stringify(error);
@@ -95,7 +114,6 @@ export class MenuComponent {
                 }
             );
         }
-
     }
     back() {
         this.router.navigate(["sg/usuario"]);

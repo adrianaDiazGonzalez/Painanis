@@ -9,8 +9,9 @@ import { Domicilio } from "../../modelos/ope/menu";
 
 @Injectable()
 export class MenuService {
+    
     //constructor del http para los servicios REST
-    constructor(private http: Http, private router: Router) { }
+    constructor( private http: Http, private router: Router) { }
     postQuote(domicilio: Domicilio){
         var tt_ctDomicilio = [domicilio];
         console.log("Json", JSON.stringify({
@@ -35,6 +36,7 @@ export class MenuService {
                     alert("estoy en post")
                 }
                 else {
+                    
                     this.router.navigate(["ope/menu"]);
                 }
             }, error => {
@@ -47,7 +49,7 @@ export class MenuService {
             { headers: headers }));*/
 
     }
-
+    
 //Metodo para la validacion de codigo postal
     validacp(ipcCP: string): Promise<any> {
         let headers = new Headers();
