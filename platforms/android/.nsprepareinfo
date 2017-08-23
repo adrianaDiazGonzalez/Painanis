@@ -1,7 +1,7 @@
 {
-	"time": "Wed Aug 23 2017 13:39:21 GMT-0500 (Hora de verano central (México))",
+	"time": "Wed Aug 23 2017 13:56:35 GMT-0500 (Hora de verano central (México))",
 	"bundle": false,
 	"release": false,
-	"changesRequireBuild": true,
+	"changesRequireBuild": false,
 	"changesRequireBuildTime": "Wed Aug 23 2017 13:39:21 GMT-0500 (Hora de verano central (México))"
 }
