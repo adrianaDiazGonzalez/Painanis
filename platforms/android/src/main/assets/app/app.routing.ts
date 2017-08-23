@@ -7,6 +7,7 @@ import { PersonaComponent } from "./plantillas/sg/persona.component"
 import { PasswordComponent } from "./plantillas/sg/contrasena.component"
 import { ChanceComponent } from "./plantillas/sg/cambiocontra.component"
 import { MenuComponent } from "./plantillas/ope/menu.component"
+import { DatosComponent } from "./plantillas/ope/datos.component"
 
 
 export const routes = [
@@ -18,7 +19,8 @@ export const routes = [
     { path: "sg/persona", component: PersonaComponent },
     { path: "sg/contrasena", component: PasswordComponent },
     { path: "sg/cambio", component: ChanceComponent },
-    { path: "ope/menu",  component: MenuComponent }
+    { path: "ope/menu",  component: MenuComponent },
+    { path: "ope/datos",  component: DatosComponent }
 
 
 ];
@@ -32,6 +34,7 @@ export const navigatableComponents = [
     PersonaComponent,
     PasswordComponent,
     ChanceComponent,
-    MenuComponent
+    MenuComponent,
+    DatosComponent
 
 ];

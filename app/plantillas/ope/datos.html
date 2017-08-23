@@ -1,0 +1,13 @@
+<ScrollView>
+    <StackLayout>
+        <StackLayout>
+         <label text="Registro de Datos" class="info" horizontalAlignment="center"></label>
+         </StackLayout>
+       <DockLayout>
+            <Image src="~/images/c.png" col="0" row="0" class="img" (tap)="back()" horizontalAlignment="left"></Image>    
+            <label text="Registrar tarjeta" col="1" row="0"class="inf1" ></label>      
+        </DockLayout>
+
+        <Button text="Guardar" class="submit-button" (tap)="guardar()"></Button>
+    </StackLayout>
+</ScrollView>
