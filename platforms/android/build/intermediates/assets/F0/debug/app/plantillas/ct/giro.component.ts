@@ -9,10 +9,8 @@ import { HttpModule, Http } from '@angular/http';
 @Component({
   selector: "my-app",
   providers : [GiroService],
-  templateUrl: "plantillas/ct/vista.html"
-  ,
-    styleUrls: ["plantillas/css/giro.css"]
-    
+  templateUrl: "plantillas/ct/vista.html",
+  styleUrls: ["plantillas/css/giro.css"]
 })
 
 export class GiroComponent implements OnInit {

@@ -1,22 +1,3 @@
-Page {
-  background-color: white;
-  font-size: 17;
-}
-TextField {
-  margin:    5;
-  padding:   10;
-  font-size: 13;
-}
-StackLayout {
-  margin-left: 30;
-  margin-right: 30;
-  padding-bottom: 15;
-  background-color: white;
-}
-Image {
-  margin-top: 5;
-  margin-bottom: 20;
-}
 Button, TextField {
   margin-left: 10;
   margin-right: 10;
@@ -28,19 +9,13 @@ Label{
   font-size: 13;
 }
 .logo{
-    margin-top: 50;
-    margin-left: 30;
-    margin-right: 30;
-    margin-bottom: 50;  
+    margin-top: 20;
+    margin-left: 20;
+    margin-right: 20;
+    margin-bottom: 20;  
 }
 .submit-button {
   background-color: #E73C3E ;
-  color:white;
-  margin-top: 20;
-  width: 50%;
-}
-.register{
-  background-color: #B8B7B8;
   color:white;
   margin-top: 20;
   width: 50%;

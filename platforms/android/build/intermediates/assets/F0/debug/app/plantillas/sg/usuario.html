@@ -1,13 +1,10 @@
 <ScrollView>
-   <StackLayout>
+  <StackLayout>
     <ActionBar title="Bienvenido" class="action-bar"></ActionBar>
-    <Image src="~/images/logofinal.jpg" class="logo" horizontalAlignment="center" verticalAlignment="center" ></Image>
-    <TextField hint="Usuario" keyboardType="email" [(ngModel)]="usuario.iUsuario"
-    autocorrect="false" autocapitalizationType="none"></TextField >
-    <TextField hint="Contraseña" secure="true" [(ngModel)]="usuario.cUsuario"></TextField>
-    
+    <Image src="~/images/logo.jpg" class="logo" horizontalAlignment="center"></Image>
+    <TextField hint="Usuario" [(ngModel)]="usuario.cUsuario" autocorrect="false" autocapitalizationType="none"></TextField>
+    <TextField hint="Contraseña" secure="true" [(ngModel)]="usuario.cContrasena"></TextField>
+    <label text="Recuperar contraseña" class="text" (tap)="contrasena()" horizontalAlignment="right"> </label>
     <Button [text]="isLoggingIn ? 'Sign in' : 'Ingresar'" class="submit-button" (tap)="submit()"></Button>
-    <Button [text]="isLoggingIn ? 'Register': 'Registro'" class="register" (tap)="registro()"></Button>
-   
-    </StackLayout>
-  </ScrollView>
+  </StackLayout>
+</ScrollView>

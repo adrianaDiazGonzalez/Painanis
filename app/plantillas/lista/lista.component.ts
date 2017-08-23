@@ -64,3 +64,4 @@ export class ListaComponent {
       this.router.navigate(["/ope/datos"]);
     }
 }
+

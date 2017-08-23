@@ -1,26 +1,40 @@
-import { CategoriaComponent} from  "./plantillas/ope/categoria.component"
-import { GiroComponent}      from  "./plantillas/ct/giro.component"
-import { MenuComponent}      from  "./plantillas/menu/menu.component"
-import { ValidaComponent}    from  "./plantillas/sg/valida.component"
-import { LoginComponent}     from  "./plantillas/sg/usuario.component"
-import { RegistroComponent}  from  "./plantillas/sg/registro.component"
+import {ListaComponent} from "./plantillas/lista/lista.component"
+import { CategoriasComponent } from "./plantillas/ope/categoria.component"
+import { GiroComponent } from "./plantillas/ct/giro.component"
+import { ValidaComponent } from "./plantillas/sg/valida.component"
+import { LoginComponent } from "./plantillas/sg/usuario.component"
+import { PersonaComponent } from "./plantillas/sg/persona.component"
+import { PasswordComponent } from "./plantillas/sg/contrasena.component"
+import { ChanceComponent } from "./plantillas/sg/cambiocontra.component"
+import { MenuComponent } from "./plantillas/ope/menu.component"
+import { DatosComponent } from "./plantillas/ope/datos.component"
+
 
 export const routes = [
-     { path: "",               component: MenuComponent },
-     { path: "ope/categoria",  component: CategoriaComponent},
-     { path: "ct/giro",        component: GiroComponent },
-     { path: "sg/valida",      component: ValidaComponent},
-     { path: "sg/usuario",     component: LoginComponent},
-     { path: "sg/registro",    component: RegistroComponent}
-    
+    { path: "", component: ListaComponent },
+    { path: "ope/categoria", component: CategoriasComponent },
+    { path: "ct/giro", component: GiroComponent },
+    { path: "sg/valida", component: ValidaComponent },
+    { path: "sg/usuario", component: LoginComponent },
+    { path: "sg/persona", component: PersonaComponent },
+    { path: "sg/contrasena", component: PasswordComponent },
+    { path: "sg/cambio", component: ChanceComponent },
+    { path: "ope/menu",  component: MenuComponent },
+    { path: "ope/datos",  component: DatosComponent }
+
+
 ];
 
 export const navigatableComponents = [
-    MenuComponent,
-    CategoriaComponent,
+    ListaComponent,
+    CategoriasComponent,
     GiroComponent,
     ValidaComponent,
     LoginComponent,
-    RegistroComponent
-    
+    PersonaComponent,
+    PasswordComponent,
+    ChanceComponent,
+    MenuComponent,
+    DatosComponent
+
 ];

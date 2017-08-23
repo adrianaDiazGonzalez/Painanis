@@ -1,42 +1,16 @@
-@import "nativescript-theme-core/css/core.light.css";
-
-/*
-.boton{
-   background-color: #E73C3E ;
-   color:white;
+/*Estilos generales.. van en todas las vistas de la aplicacion*/
+Page {
+  background-color: white;
+  font-size: 17;
 }
-.fa {
-    font-family: "FontAwesome", fontawesome-webfont;
-    width:30;
-  
-  padding: 0;
-    margin: 0;
+StackLayout {
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 15;
+  background-color: white;
 }
-
-Label {
-    padding-top: 15;
+TextField {
+  margin:    5;
+  padding:   10;
+  font-size: 13;
 }
-
-.done{
-    text-decoration: line-through;
-}
-
-.btn-done {
-    color: limegreen;
-}
-
-.borrar{
-    color:red;
-}
-
-Button{
-    background-color: white;
-    border-width: 1;
-    border-color:white;
-    color:#157efb;
-}
-
-StackLayout{
-    padding: 10;
-}
-   */
