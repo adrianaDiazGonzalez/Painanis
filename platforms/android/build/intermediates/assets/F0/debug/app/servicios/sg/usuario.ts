@@ -6,12 +6,16 @@ import "rxjs/add/operator/do";
 import "rxjs/add/operator/map";
 import { ttctPersona } from "../../modelos/sg/usuario";
 import { Router } from "@angular/router";
+
 //Exportación de la clase usuario
 @Injectable()
 export class UserService {
 
   //constructor del http para los servicios REST
   constructor(private http: Http, private router: Router) { }
+
+
+
 
   //Llamado al servicio REST "get"
   getQuote() {
@@ -25,18 +29,6 @@ export class UserService {
   }
   //Llamado al servicio REST "post"  
   postQuote(usuario: ttctPersona) {
-    var ttctPersona = [usuario];
-
-    console.log(ttctPersona)
-
-
-    console.log(JSON.stringify({
-      "request":
-      {
-        "ipcUsuario": usuario.cUsuario,
-        "ipcContrasena": usuario.cContrasena
-      }
-    }))
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
     this.http.post("http://192.168.2.153:8810/Painanis/rest/painanis/as_sgSesion_gen",

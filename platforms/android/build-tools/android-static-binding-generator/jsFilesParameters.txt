@@ -2,6 +2,7 @@ C:\git\Painanis\platforms\android\src\main\assets\app\app.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\app.module.js
 C:\git\Painanis\platforms\android\src\main\assets\app\app.routing.js
 C:\git\Painanis\platforms\android\src\main\assets\app\main.js
+C:\git\Painanis\platforms\android\src\main\assets\app\sesionActiva.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ct\giro.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\categorias.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\datos.js

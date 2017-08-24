@@ -42,12 +42,6 @@ export class MenuService {
             }, error => {
                 console.log("ERROR: ", error);
             });
-       
-       
-       /* return Promise.resolve(this.http.post("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctDomicilio_gen",
-            JSON.stringify({ "request": { "dsDomicilio": { tt_ctDomicilio } } }),
-            { headers: headers }));*/
-
     }
     
 //Metodo para la validacion de codigo postal

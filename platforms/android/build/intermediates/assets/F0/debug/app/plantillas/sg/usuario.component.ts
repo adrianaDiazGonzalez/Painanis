@@ -1,9 +1,10 @@
 //importaciones de recursos a utilizar
 import { Page } from "ui/page";
-import { Component } from "@angular/core";
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { UserService } from "../../servicios/sg/usuario";
 import { Router } from "@angular/router";
 import { ttctPersona } from "../../modelos/sg/usuario";
+import { SesionActiva} from "../../sesionActiva";
 
 //Declaración de los componentes de la vista
 @Component({
@@ -14,7 +15,7 @@ import { ttctPersona } from "../../modelos/sg/usuario";
 })
 
 //Clase para las acciones y procesos
-export class LoginComponent {
+export class LoginComponent implements OnInit {
   usuario: ttctPersona;
   //Constructor
   constructor(private page: Page, private router: Router, private userService: UserService) {
@@ -32,9 +33,14 @@ export class LoginComponent {
       alert("Ingresa una contraseña por favor");
       return;
     }
+
     this.userService.postQuote(this.usuario);
   }
   contrasena() {
     this.router.navigate(["sg/contrasena"]);
   }
+  //
+  ngOnInit() {
+    console.log(SesionActiva.sesion.cUsuario);
+    }
 }

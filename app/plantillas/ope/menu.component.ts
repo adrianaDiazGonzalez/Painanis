@@ -46,10 +46,10 @@ export class MenuComponent {
                     resolve
                         .map(response => response.json())
                         .subscribe(result => {
-                            if (result.response.opcMensaje != "") {
-                                alert("Codigo Postal invalido");
-                            }
-                            else {
+                                if (result.response.opcMensaje != "") {
+                                    alert("Codigo Postal invalido");
+                                }
+                                else {
                                 //Valida que se ingrese Colonia
                                 if (this.domicilio.cColonia == null || this.domicilio.cColonia == "") {
                                     alert("Ingrese una Colonia por favor");

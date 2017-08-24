@@ -7,6 +7,10 @@ import { DatePicker } from "ui/date-picker";
 import * as datePickerModule from "tns-core-modules/ui/date-picker";
 import { EventData } from "data/observable";
 import { Switch } from "ui/switch";
+import { Router } from "@angular/router";
+//importacion para mantener la sesion activa
+import { SesionActiva } from "../../sesionActiva";
+
 
 //Declaración de los componentes de la vista
 @Component({
@@ -21,10 +25,11 @@ export class PersonaComponent {
     //Declaracion de variable
     public firstSwitchState = false;
     public secondSwitchState = true;
+    public personaList: Array<Persona>;
     persona: Persona;
 
     //Constructor
-    constructor(private page: Page, private personaService: PersonaService) {
+    constructor(private page: Page,private router: Router, private personaService: PersonaService) {
         page.actionBarHidden = true;
         this.persona = new Persona();
         this.persona.iPersona = "0";
@@ -75,7 +80,26 @@ export class PersonaComponent {
             }
         }
         //si todas las validaciones son correctas para a la insercion de datos  
-        this.personaService.postQuote(this.persona);
+        this.personaService.postQuote(this.persona).
+            then((resolve) => {
+                resolve
+                    .map(response => response.json())
+                    .subscribe(result => {
+                        if (result.response.opcMensaje != "") {
+                            alert("El usuario ya existe");
+                        }
+                        else {
+                            console.log("me registre exitosamente");
+                            this.router.navigate(["ope/menu"]);
+                        }
+                    })
+            });
+
+
+        //localstorage
+         console.log(this.persona.cApaterno);   
+        console.log("perosna lis", this.personaList);
+        SesionActiva.sesion = this.persona;
     }
     //Metodo para el campo de Genero
     public onFirstChecked(args) {
