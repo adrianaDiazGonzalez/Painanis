@@ -4,7 +4,12 @@
     <Image src="~/images/logo.jpg" class="logo" horizontalAlignment="center"></Image>
     <TextField hint="Usuario" [(ngModel)]="usuario.cUsuario" autocorrect="false" autocapitalizationType="none"></TextField>
     <TextField hint="Contraseña" secure="true" [(ngModel)]="usuario.cContrasena"></TextField>
-    <label text="Recuperar contraseña" class="text" (tap)="contrasena()" horizontalAlignment="right"> </label>
+    <DockLayout>
+      <label text="Recordar datos" class="text" horizontalAlignment="left"> </label>
+      <label text="Recuperar contraseña" class="text" (tap)="contrasena()" horizontalAlignment="right"> </label>
+    </DockLayout>
+    <Switch checked="false" (checkedChange)="onFirstChecked($event)" row="0" col="1" horizontalAlignment="left"
+    [(ngModel)]="lrecordar"></Switch>
     <Button [text]="isLoggingIn ? 'Sign in' : 'Ingresar'" class="submit-button" (tap)="submit()"></Button>
   </StackLayout>
 </ScrollView>

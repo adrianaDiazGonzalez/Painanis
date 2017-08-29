@@ -23,22 +23,23 @@ import { SesionActiva } from "../../sesionActiva";
 //Acciones y procesos de la ventana 
 export class PersonaComponent {
     //Declaracion de variable
+    //variables para el radio button de genero
     public firstSwitchState = false;
     public secondSwitchState = true;
     public personaList: Array<Persona>;
     persona: Persona;
 
     //Constructor
-    constructor(private page: Page,private router: Router, private personaService: PersonaService) {
-        page.actionBarHidden = true;
-        this.persona = new Persona();
+    constructor(private page: Page, private router: Router, private personaService: PersonaService) {
+        page.actionBarHidden = true; //Oculta la barra superior en la pantalla
+        this.persona = new Persona(); //Instancea el objeto de persona a la tabla Persona
         this.persona.iPersona = "0";
         this.persona.iTipoPersona = "1";
         this.persona.lGenero = false;
         this.persona.dtFechaNac = "";
         this.persona.lActivo = true;
     }
-    //Acciones o procesos  
+    //Acciones o procesos al precionar el boton
     submit() {
         //variables para validaciones
         var bandera = false;
@@ -94,10 +95,9 @@ export class PersonaComponent {
                         }
                     })
             });
-
-
+                
         //localstorage
-         console.log(this.persona.cApaterno);   
+        console.log(this.persona.cApaterno);
         console.log("perosna lis", this.personaList);
         SesionActiva.sesion = this.persona;
     }
