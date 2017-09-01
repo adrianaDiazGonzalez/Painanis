@@ -11,8 +11,6 @@ import { Router } from "@angular/router";
 //importacion para mantener la sesion activa
 import { SesionActiva } from "../../sesionActiva";
 
-
-
 //Declaración de los componentes de la vista
 @Component({
     selector: "my-app",
