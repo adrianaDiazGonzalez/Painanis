@@ -22,7 +22,7 @@ export class DireccionComponent {
     public btnOkText?: string;
     public btnCancelText?: string;
 
-    constructor(private page: Page, private router: Router, private menuService: MenuService) {
+    constructor(private page: Page, private router: Router, private menuService: DireccionService) {
         page.actionBarHidden = true; //sirve para ocultar la barra de titulo de la ventana
         this.domicilio = new Domicilio();
         this.domicilio.iDomicilio = "0";

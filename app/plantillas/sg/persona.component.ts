@@ -43,16 +43,47 @@ export class PersonaComponent {
         //variables para validaciones
         var bandera = false;
         var emailRegex;
+        var nameRegex;
+        var apRegex;
+        var amRegex;
         //Código que condiciona al usuario a ingresar los datos que son obligatorios para el registro
         //valida que se ingrese un Nombre
         if (this.persona.cNombre == null || this.persona.cNombre == "") {
             alert("Ingrese un Nombre por favor");
             return;
         }
+        //valida que el nombre sean letras y no numeros 
+        nameRegex = /^([A-Z][a-z])/;
+        if (this.persona.cNombre != "") {
+            if (!nameRegex.test(this.persona.cNombre)) {
+                bandera = true;
+                alert("Ingrese un Nombre valido por favor");
+                return;
+            }
+        
         //Valida que se ingrese un Apellido Paterno
         if (this.persona.cApaterno == null || this.persona.cApaterno == "") {
             alert("Ingrese un Apellido Paterno por favor");
             return;
+        }
+        //valida que el Apellido Paterno sean letras y no numeros 
+        apRegex = /^([A-Z][a-z])/;
+        if (this.persona.cApaterno != "") {
+            if (!apRegex.test(this.persona.cApaterno)) {
+                 bandera = true;
+                alert("Ingrese un Apellido Paterno valido por favor");
+                return;
+            }
+        }
+
+        //valida que el Apellido Materno sean letras y no numeros 
+        amRegex = /^([A-Z][a-z])/;
+        if (this.persona.cAmaterno != "") {
+            if (!amRegex.test(this.persona.cAmaterno)) {
+                 bandera = true;
+                alert("Ingrese un Apellido Materno valido por favor");
+                return;
+            }
         }
         //Valida que se ingrese un Telefono
         if (this.persona.cTelefono == null || this.persona.cTelefono == "") {
@@ -93,11 +124,12 @@ export class PersonaComponent {
                         }
                     })
             });
-                
+
         //localstorage
         console.log(this.persona.cApaterno);
         console.log("perosna lis", this.personaList);
         SesionActiva.sesion = this.persona;
+    }
     }
     //Metodo para el campo de Genero
     public onFirstChecked(args) {
