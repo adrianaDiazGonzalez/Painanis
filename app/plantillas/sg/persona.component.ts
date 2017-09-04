@@ -89,7 +89,6 @@ export class PersonaComponent {
                             alert("El usuario ya existe");
                         }
                         else {
-                            console.log("me registre exitosamente");
                             this.router.navigate(["ope/menu"]);
                         }
                     })

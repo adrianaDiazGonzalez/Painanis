@@ -2,18 +2,18 @@ import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { HttpModule, Http } from '@angular/http';
 import { Page } from "ui/page";
-import { MenuService } from "../../servicios/ope/menu";
-import { Domicilio } from "../../modelos/ope/menu";
+import { DireccionService } from "../../servicios/ope/direccion";
+import { Domicilio } from "../../modelos/ope/direccionM";
 import dialogs = require("ui/dialogs");
 
 
 @Component({
     selector: "my-app",
-    providers: [MenuService],
+    providers: [DireccionService],
     templateUrl: "plantillas/ope/menu.html",
     styleUrls: ["plantillas/css/menu.css"]
 })
-export class MenuComponent {
+export class DireccionComponent {
     domicilio: Domicilio;
     public title: string;
     public message: string;
@@ -117,5 +117,20 @@ export class MenuComponent {
     }
     back() {
         this.router.navigate(["sg/usuario"]);
+    }
+    id1(){
+
+    }
+    id2(){
+
+    }
+    id3(){
+
+    }
+    id4(){
+
+    }
+    id5(){
+
     }
 }

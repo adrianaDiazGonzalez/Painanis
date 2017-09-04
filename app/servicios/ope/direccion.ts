@@ -5,10 +5,10 @@ import "rxjs/add/operator/do";
 import "rxjs/add/operator/map";
 import 'rxjs/add/operator/toPromise';
 import { Router } from "@angular/router";
-import { Domicilio } from "../../modelos/ope/menu";
+import { Domicilio } from "../../modelos/ope/direccionM";
 
 @Injectable()
-export class MenuService {
+export class DireccionService {
     
     //constructor del http para los servicios REST
     constructor( private http: Http, private router: Router) { }

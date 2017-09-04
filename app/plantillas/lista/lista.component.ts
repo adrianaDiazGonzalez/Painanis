@@ -14,7 +14,7 @@ import { Router } from "@angular/router";
     <Button text = "Registro"    class="boton" (tap)="registro()"></Button>
     <Button text = "Contraseña"  class="boton" (tap)="contrasena()"></Button>
     <Button text = "Cambio de Contraseña"    class="boton" (tap)="cambio()"></Button>
-    <Button text = "Menu"        class="boton" (tap)="menu()"></Button>
+    <Button text = "Direccion"    class="boton" (tap)="dir()"></Button>
     <Button text = "Datos"       class="boton" (tap)="datos()"></Button>
      </StackLayout>
   </ScrollView>
@@ -55,9 +55,9 @@ export class ListaComponent {
     {
       this.router.navigate(["/sg/cambio"]);
     }
-    menu()
+    dir()
     {
-      this.router.navigate(["/ope/menu"]);
+      this.router.navigate(["/ope/dir"]);
     }
     datos()
     {
