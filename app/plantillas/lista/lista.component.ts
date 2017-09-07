@@ -15,7 +15,9 @@ import { Router } from "@angular/router";
     <Button text = "Contraseña"  class="boton" (tap)="contrasena()"></Button>
     <Button text = "Cambio de Contraseña"    class="boton" (tap)="cambio()"></Button>
     <Button text = "Menu"        class="boton" (tap)="menu()"></Button>
-    <Button text = "Datos"       class="boton" (tap)="datos()"></Button>
+    <Button text = "Datosssssss"       class="boton" (tap)="datos()"></Button>
+    <Button text = "Atributos"       class="boton" (tap)="atributos()"></Button>
+    
      </StackLayout>
   </ScrollView>
   `
@@ -62,6 +64,10 @@ export class ListaComponent {
     datos()
     {
       this.router.navigate(["/ope/datos"]);
+    }
+     atributos()
+    {
+      this.router.navigate(["/ct/atributo"]);
     }
 }
 

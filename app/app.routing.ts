@@ -8,7 +8,7 @@ import { PasswordComponent } from "./plantillas/sg/contrasena.component"
 import { ChanceComponent } from "./plantillas/sg/cambiocontra.component"
 import { MenuComponent } from "./plantillas/ope/menu.component"
 import { DatosComponent } from "./plantillas/ope/datos.component"
-
+import { AtributoComponent } from "./plantillas/ct/atributo"
 
 export const routes = [
     { path: "", component: ListaComponent },
@@ -20,7 +20,8 @@ export const routes = [
     { path: "sg/contrasena", component: PasswordComponent },
     { path: "sg/cambio", component: ChanceComponent },
     { path: "ope/menu",  component: MenuComponent },
-    { path: "ope/datos",  component: DatosComponent }
+    { path: "ope/datos",  component: DatosComponent },
+    { path: "ct/atributo",  component: AtributoComponent }
 
 
 ];
@@ -35,6 +36,7 @@ export const navigatableComponents = [
     PasswordComponent,
     ChanceComponent,
     MenuComponent,
-    DatosComponent
+    DatosComponent,
+    AtributoComponent
 
 ];
