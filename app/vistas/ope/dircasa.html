@@ -1,0 +1,21 @@
+<ScrollView>
+    <StackLayout>
+        <DockLayout>
+            <Image src="~/images/go.png" col="0" row="0" class="back" (tap)="back()" horizontalAlignment="left"></Image>
+            <label text="Registro de Dirección" class="info1" horizontalAlignment="center"></label>
+            <Image src="~/images/home.png"    class="img"></Image>
+        </DockLayout>
+
+        <TextField hint="Código Postal" [(ngModel)]="domicilio.cCp" keyboardType="Number"></TextField>
+        <TextField hint="Colonia" [(ngModel)]="domicilio.cColonia"></TextField>
+        <TextField hint="Calle" [(ngModel)]="domicilio.cCalle"></TextField>
+        <TextField hint="Num. Interior" [(ngModel)]="domicilio.cNumInterior"></TextField>
+        <TextField hint="Num. Exterior" [(ngModel)]="domicilio.cNumExterior"></TextField>
+        <TextField hint="Municipio" [(ngModel)]="domicilio.cMunicipio"></TextField>
+        <TextField hint="Ciudad" [(ngModel)]="domicilio.cCiudad"></TextField>
+        <TextField hint="Estado" [(ngModel)]="domicilio.cEstado"></TextField>
+        <TextField hint="Pais" [(ngModel)]="domicilio.cPais"></TextField>
+
+        <Button text="Guardar" class="submit-button" (tap)="guardar()"></Button>
+    </StackLayout>
+</ScrollView>

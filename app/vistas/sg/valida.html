@@ -1,0 +1,29 @@
+Codigo funcional con xml
+    <ScrollView>
+    <StackLayout>
+        <Image src="~/images/mapa.png" class="cp" horizontalAlignment="center" verticalAlignment="center"></Image>
+        <!--keyboardType= "Number" nos ayuda a definir que el valor solo puede ser Numerico-->
+        <TextField hint="CP" [(ngModel)]="cp" keyboardType="Number" verticalAlignment="center"></TextField>
+        <Button text="Validar" class="boton" (tap)="validar()"></Button>
+        <label text="Iniciar Sesión" class="text" (tap)="sesion()" horizontalAlignment="center"> </label>
+    </StackLayout>
+</ScrollView>
+
+<!--Codigo Html 
+
+<div class="div1">
+    <ScrollView>
+    <Image src="~/images/mapa.png" class="imgcp" horizontalAlignment="center"></Image>
+</ScrollView>
+    
+</div>
+<div clas="div2">
+    <TextField hint="CP" [(ngModel)]="cp" keyboardType="Number" verticalAlignment="center"></TextField>
+</div>
+<div class="div3">
+    <Button text="Validar" class="boton" (tap)="validar()"></Button>
+</div>
+<div class="div4">
+    <label text="Iniciar Sesión" class="text" (tap)="sesion()" horizontalAlignment="center"> </label>
+</div>
+-->

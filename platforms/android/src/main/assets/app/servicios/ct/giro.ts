@@ -11,58 +11,62 @@ export class GiroService {
   //constructor del http para los servicios REST
   constructor(private http: Http) {}
 
+  
   //Llamado al servicio REST "get"
-    getQuote(){
-      let headers = new Headers();
-      let resultado;
-      headers.append("Content-Type", "application/json");
-      this.http.get("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctGiro_gen")
-        .map(response => response.json())
-          .subscribe(result => {
-            console.log("Servicio",JSON.stringify(result));
-            resultado = JSON.stringify(result);
-          }, error => {
-              console.log("ERROR: ", error);});
-          console.log("Servico resultado",resultado);                
-      return Promise.resolve(resultado);
-    }
+  getGiros(): Promise<any> {
+   // let headers = new Headers();
+    //headers.append("Content-Type", "application/json");
+    return Promise.resolve(this.http.get("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctGiro_gen"));
+  }
 
-    getQuoteRetardo():Promise<string> {
-      return new Promise<string>(
-            (resolve) => {
-              setTimeout(resolve,500)
-            }).then(()=> this.getQuote());
-    }
+  //Llamado al servicio REST "post"
+  postQuote(giro: Giro) {
+    var tt_ctGiro = [giro];
+    console.log(JSON.stringify({
+      "request":
+      {
+        "dtGiro":
+        { tt_ctGiro }
+      }
 
-    //Llamado al servicio REST "post"
-    postQuote(giro: Giro) {
-       var tt_ctGiro = [giro];
-       var ttctRegistro  = [giro];
-       console.log(tt_ctGiro)
+    }));
+    let headers = new Headers();
+    headers.append("Content-Type", "application/json");
+    this.http.post("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctGiro_gen",
+      JSON.stringify({
+        "request":
+        {
+          "dtGiro":
+          { tt_ctGiro }
+        }
+      }),
+      { headers: headers })
 
-      console.log( JSON.stringify({ "request" : 
-                          {"dtGiro" :
-                            {tt_ctGiro}
-                          }
-                          
-                        }));
-        let headers = new Headers();
-        headers.append("Content-Type", "application/json");
-        this.http.post("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctGiro_gen", 
-        JSON.stringify({ "request" : 
-                          {"dtGiro" :
-                            {tt_ctGiro}
-                          }
-                        }), 
-              { headers: headers })
-              
-              .map(response => response.json())
-              .subscribe(result => {
-                  console.log(JSON.stringify(result));
-                  console.log(result.response.oplResultado);
-                  console.log(result.response.opcMensaje);
-                }, error => {
-                     console.log("ERROR: ", error);
-                    });
-    }
+      .map(response => response.json())
+      .subscribe(result => {
+        console.log(JSON.stringify(result));
+        console.log(result.response.oplResultado);
+        console.log(result.response.opcMensaje);
+      }, error => {
+        console.log("ERROR: ", error);
+      });
+  }
+
+  //Llamado al servicio REST "delete"
+  deleteQuote(ipiGiro: string){
+    console.log(ipiGiro);
+    let headers = new Headers();
+    headers.append("ipiGiro", ipiGiro);
+    this.http.delete("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctGiro_gen",      
+      "ipiGiro = " + ipiGiro)
+      .map(response => response.json())
+      .subscribe(result => {
+        console.log(JSON.stringify(result));
+        console.log(result.response.oplResultado);
+        console.log(result.response.opcMensaje);
+      }, error => {
+        console.log("ERROR: ", error);
+      });    
+  }
+
 }
