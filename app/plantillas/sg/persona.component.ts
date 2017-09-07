@@ -53,7 +53,7 @@ export class PersonaComponent {
             return;
         }
         //valida que el nombre sean letras y no numeros 
-        nameRegex = /^([A-Z][a-z])/;
+        nameRegex = /([A-Z][a-z])/;
         if (this.persona.cNombre != "") {
             if (!nameRegex.test(this.persona.cNombre)) {
                 bandera = true;
@@ -120,14 +120,12 @@ export class PersonaComponent {
                             alert("El usuario ya existe");
                         }
                         else {
-                            this.router.navigate(["ope/menu"]);
+                            this.router.navigate(["ope/dir"]);
                         }
                     })
             });
 
         //localstorage
-        console.log(this.persona.cApaterno);
-        console.log("perosna lis", this.personaList);
         SesionActiva.sesion = this.persona;
     }
     }

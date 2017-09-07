@@ -36,4 +36,10 @@ export class Giro {
         return this.dtModificado;
     }
 
+    public toString (){
+        return "ID: '"+ this.iGiro +"'  Giro: " 
+            + this.cGiro + " Activo: " + this.lActivo + " Fecha de Creacion: " + this.dtCreado 
+                + " Fecha de Modificacion: " + this.dtModificado;
+    }
+
 }
