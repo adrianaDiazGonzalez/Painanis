@@ -23,25 +23,10 @@ export class DireccionService {
         }));
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
-        this.http.post("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctDomicilio_gen",
+        return Promise.resolve(this.http.post("http://192.168.2.153:8810/Painanis/rest/painanis/as_ctDomicilio_gen",
             JSON.stringify({ "request": { "dsDomicilio": { tt_ctDomicilio } } }),
             { headers: headers })
-            .map(response => response.json())
-            .subscribe(result => {
-                console.log(JSON.stringify(result));
-                console.log(result.response.oplResultado);
-                console.log(result.response.opcMensaje);
-
-                if (result.response.opcMensaje != "") {
-                    alert("estoy en post")
-                }
-                else {
-                    
-                    this.router.navigate(["ope/menu"]);
-                }
-            }, error => {
-                console.log("ERROR: ", error);
-            });
+        )
     }
     
 //Metodo para la validacion de codigo postal

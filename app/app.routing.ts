@@ -1,13 +1,14 @@
-import { ListaComponent} from "./plantillas/lista/lista.component"
-import { CategoriasComponent } from "./plantillas/ope/categoria.component"
-import { GiroComponent } from "./plantillas/ct/giro.component"
-import { ValidaComponent } from "./plantillas/sg/valida.component"
-import { LoginComponent } from "./plantillas/sg/usuario.component"
-import { PersonaComponent } from "./plantillas/sg/persona.component"
-import { PasswordComponent } from "./plantillas/sg/contrasena.component"
-import { ChanceComponent } from "./plantillas/sg/cambiocontra.component"
-import { DireccionComponent } from "./plantillas/ope/direccion.component"
-import { DatosComponent } from "./plantillas/ope/datos.component"
+import { ListaComponent} from "./componentes/lista/lista.component"
+import { CategoriasComponent } from "./componentes/ope/categoria.component"
+import { GiroComponent } from "./componentes/ct/giro.component"
+import { ValidaComponent } from "./componentes/sg/valida.component"
+import { LoginComponent } from "./componentes/sg/usuario.component"
+import { PersonaComponent } from "./componentes/sg/persona.component"
+import { PasswordComponent } from "./componentes/sg/contrasena.component"
+import { ChanceComponent } from "./componentes/sg/cambiocontra.component"
+import { DireccionComponent } from "./componentes/ope/direccion.component"
+import { DatosComponent } from "./componentes/ope/datos.component"
+import { ActualizaDatosComponent } from "./componentes/ope/ActualizaDatos.component"
 
 
 export const routes = [
@@ -20,7 +21,11 @@ export const routes = [
     { path: "sg/contrasena", component: PasswordComponent },
     { path: "sg/cambio", component: ChanceComponent },
     { path: "ope/dir",  component: DireccionComponent },
-    { path: "ope/datos",  component: DatosComponent }
+    { path: "ope/datos",  component: DatosComponent },
+    { path: "ope/actDatos",  component: ActualizaDatosComponent },
+    { path: "ope/atributos",  component: ActualizaDatosComponent },
+    { path: "ope/tarjeta",  component: ActualizaDatosComponent },
+    { path: "ope/detprod",  component: ActualizaDatosComponent }
 ];
 
 export const navigatableComponents = [
@@ -33,6 +38,7 @@ export const navigatableComponents = [
     PasswordComponent,
     ChanceComponent,
     DireccionComponent,
-    DatosComponent
+    DatosComponent,
+    ActualizaDatosComponent
 
 ];
