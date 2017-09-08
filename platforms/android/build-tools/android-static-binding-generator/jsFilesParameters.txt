@@ -3,13 +3,17 @@ C:\git\Painanis\platforms\android\src\main\assets\app\app.module.js
 C:\git\Painanis\platforms\android\src\main\assets\app\app.routing.js
 C:\git\Painanis\platforms\android\src\main\assets\app\main.js
 C:\git\Painanis\platforms\android\src\main\assets\app\sesionActiva.js
+C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ct\atributos.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ct\giro.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ct\local-storage.js
+C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ct\local_atributo.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\lista\lista.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\ActualizaDatos.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\categoria.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\datos.component.js
+C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\detprod.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\direccion.component.js
+C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\tarjeta.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\sg\cambiocontra.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\sg\contrasena.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\sg\persona.component.js
@@ -17,6 +21,7 @@ C:\git\Painanis\platforms\android\src\main\assets\app\componentes\sg\usuario.com
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\sg\valida.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ct\giro.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\actualizaDatos.js
+C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\atributos.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\categorias.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\datos.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\direccionM.js
@@ -27,6 +32,7 @@ C:\git\Painanis\platforms\android\src\main\assets\app\modelos\sg\usuario.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\sg\valida.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ct\giro.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ope\actualizaDatos.js
+C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ope\atributos.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ope\categorias.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ope\datos.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ope\direccion.js
@@ -170,7 +176,6 @@ C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modul
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\image\image.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\image-cache\image-cache-common.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\image-cache\image-cache.js
-C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\label\label-common.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\label\label.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\layout-base-common.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\layout-base.js
@@ -226,7 +231,6 @@ C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modul
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\text-base\text-base.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\text-field\text-field-common.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\text-field\text-field.js
-C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\text-view\text-view-common.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\text-view\text-view.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\time-picker\time-picker-common.js
 C:\git\Painanis\platforms\android\src\main\assets\app\tns_modules\tns-core-modules\ui\time-picker\time-picker.js

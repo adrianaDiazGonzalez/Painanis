@@ -14,21 +14,12 @@ import { Router } from "@angular/router";
     <Button text = "Registro"    class="boton" (tap)="registro()"></Button>
     <Button text = "Contraseña"  class="boton" (tap)="contrasena()"></Button>
     <Button text = "Cambio de Contraseña"    class="boton" (tap)="cambio()"></Button>
-<<<<<<< HEAD:app/plantillas/lista/lista.component.ts
-    <Button text = "Menu"        class="boton" (tap)="menu()"></Button>
-    <Button text = "Datosssssss"       class="boton" (tap)="datos()"></Button>
-    <Button text = "Atributos"       class="boton" (tap)="atributos()"></Button>
-=======
     <Button text = "Direccion"    class="boton" (tap)="dir()"></Button>
     <Button text = "Datos"        class="boton" (tap)="datos()"></Button>
     <Button text = "Act. Datos per"        class="boton" (tap)="actualizadatos()"></Button>
      <Button text = "atributos"        class="boton" (tap)="atributos()"></Button>
      <Button text = "tarjeta"        class="boton" (tap)="tarjeta()"></Button>
-     <Button text = "detalleprod"        class="boton" (tap)="detprod()"></Button>
-    
-    
->>>>>>> 40a02424e6a4d2992c9fd6fdd23c0e0cf3f5db70:app/componentes/lista/lista.component.ts
-    
+     <Button text = "detalleprod"        class="boton" (tap)="detprod()"></Button>   
      </StackLayout>
   </ScrollView>
   `
@@ -76,27 +67,17 @@ export class ListaComponent {
     {
       this.router.navigate(["/ope/datos"]);
     }
-<<<<<<< HEAD:app/plantillas/lista/lista.component.ts
      atributos()
     {
       this.router.navigate(["/ct/atributo"]);
-=======
-    actualizadatos()
-    {
-      this.router.navigate(["/ope/actDatos"]);
     }
-    atributos ()
+     tarjeta()
     {
-      this.router.navigate(["/ope/actDatos"]);
+      this.router.navigate(["ope/tarjeta"]);
     }
-    tarjeta ()
+     detprod()
     {
-      this.router.navigate(["/ope/actDatos"]);
-    }
-    detprod ()
-    {
-      this.router.navigate(["/ope/actDatos"]);
->>>>>>> 40a02424e6a4d2992c9fd6fdd23c0e0cf3f5db70:app/componentes/lista/lista.component.ts
+      this.router.navigate(["ope/detprod"]);
     }
 }
 

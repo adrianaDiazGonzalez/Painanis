@@ -1,4 +1,4 @@
-import { ListaComponent} from "./componentes/lista/lista.component"
+import {ListaComponent} from "./componentes/lista/lista.component"
 import { CategoriasComponent } from "./componentes/ope/categoria.component"
 import { GiroComponent } from "./componentes/ct/giro.component"
 import { ValidaComponent } from "./componentes/sg/valida.component"
@@ -8,8 +8,9 @@ import { PasswordComponent } from "./componentes/sg/contrasena.component"
 import { ChanceComponent } from "./componentes/sg/cambiocontra.component"
 import { DireccionComponent } from "./componentes/ope/direccion.component"
 import { DatosComponent } from "./componentes/ope/datos.component"
-import { ActualizaDatosComponent } from "./componentes/ope/ActualizaDatos.component"
-
+import { AtributosComponent } from "./componentes/ct/atributos.component"
+import { TarjetaComponent } from "./componentes/ope/tarjeta.component"
+import { DetProductoComponent } from "./componentes/ope/detprod.component"
 
 export const routes = [
     { path: "", component: ListaComponent },
@@ -19,10 +20,16 @@ export const routes = [
     { path: "sg/usuario", component: LoginComponent },
     { path: "sg/persona", component: PersonaComponent },
     { path: "sg/contrasena", component: PasswordComponent },
-    { path: "sg/cambio", component: ChanceComponent },
+    { path: "sg/cambio", component: ChanceComponent }, 
+    { path: "ope/datos",  component: DatosComponent },
     { path: "ope/dir",  component: DireccionComponent },
     { path: "ope/datos",  component: DatosComponent },
-    { path: "ope/actDatos",  component: ActualizaDatosComponent }
+     { path: "ope/actDatos",  component: DatosComponent },
+    { path: "ct/atributo",  component: AtributosComponent },
+    { path: "ope/tarjeta",  component: TarjetaComponent },
+    { path: "ope/detprod",  component: DetProductoComponent }
+
+   
 ];
 
 export const navigatableComponents = [
@@ -36,6 +43,8 @@ export const navigatableComponents = [
     ChanceComponent,
     DireccionComponent,
     DatosComponent,
-    ActualizaDatosComponent
+    AtributosComponent,
+    TarjetaComponent,
+    DetProductoComponent
 
 ];
