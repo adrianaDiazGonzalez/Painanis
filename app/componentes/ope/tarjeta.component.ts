@@ -1,6 +1,5 @@
 import { Component, ElementRef, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
-import { Giro } from "../../modelos/ct/giro";
 import { CategoriaService } from "../../servicios/ope/categorias";
 import { HttpModule, Http } from '@angular/http';
 import { Page } from "ui/page";
@@ -10,8 +9,8 @@ import FrameModule = require("ui/frame");
 @Component({
   selector: "my-app",
   providers: [CategoriaService],
-  templateUrl: "vistas/ope/actualizaDatos.html",
-  styleUrls: ["vistas/css/actualizaDatos.css"]
+  templateUrl: "vistas/ope/tarjeta.html",
+  styleUrls: ["vistas/css/tarjeta.css"]
 })
 
 export class TarjetaComponent {

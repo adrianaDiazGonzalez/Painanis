@@ -10,8 +10,8 @@ import FrameModule = require("ui/frame");
 @Component({
   selector: "my-app",
   providers: [CategoriaService],
-  templateUrl: "vistas/ope/actualizaDatos.html",
-  styleUrls: ["vistas/css/actualizaDatos.css"]
+  templateUrl: "vistas/ope/detprod.html",
+  styleUrls: ["vistas/css/detprod.css"]
 })
 
 export class DetProductoComponent {
