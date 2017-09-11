@@ -1,21 +1,21 @@
 <ScrollView>
+  <StackLayout>
     <StackLayout>
-        <StackLayout>
-         <label text="Actualización de Datos" class="info1" horizontalAlignment="center"></label>
-         </StackLayout>
-        
-          
+      <label text="Actualización de Datos" class="info1" horizontalAlignment="center"></label>
+    </StackLayout>
+
+
     <TextField hint="Nombre" [(ngModel)]="persona.cNombre"></TextField>
     <TextField hint="Apellido Paterno" [(ngModel)]="persona.cApaterno"></TextField>
     <TextField hint="Apellido Materno" [(ngModel)]="persona.cAmaterno"></TextField>
 
     <Label text="Genero" horizontalAlignment="left"> </Label >
 
-     <DockLayout rows="auto auto" columns="* *" >
-        <Image src="~/images/men.png"   class= "genero" textWrap="true"  row="0" col="0" horizontalAlignment="left" ></Image>  
+    <DockLayout rows="auto auto" columns="* *" >
+        <Image src="~/images/girl.png"   class= "genero" textWrap="true"  row="0" col="0" horizontalAlignment="left" ></Image>  
         <Switch checked="false" (checkedChange)="onFirstChecked($event)" row="0" col="1" horizontalAlignment="right"
          [(ngModel)]="persona.lGenero" ></Switch>
-        <Image src="~/images/girl.png" class= "genero" textWrap="true"   row="0" col="2" horizontalAlignment="left"  ></Image>   
+        <Image src="~/images/men.png" class= "genero" textWrap="true"   row="0" col="2" horizontalAlignment="left"  ></Image>   
      </DockLayout>
 
      <Label text="Fecha de Nacimiento" horizontalAlignment="left"> </Label>
@@ -24,10 +24,12 @@
     </DatePicker>
 
     <TextField hint="Telefono" [(ngModel)]="persona.cTelefono" keyboardType="phone"></TextField>
-    <TextField hint="Correo  *Opcional " [(ngModel)]="persona.cCorreo" keyboardType="email"></TextField>
+    <TextField hint="Correo" [(ngModel)]="persona.cCorreo" keyboardType="email"></TextField>
     <TextField hint="Nombre de usuario" [(ngModel)]="persona.cUsuario"></TextField>
     <TextField hint="Contraseña" secure="true" [(ngModel)]="persona.cContrasena"> </TextField>
-    <Button [text]="'Registrar'" class="submit-button" (tap)="submit()"></Button>
+
+    <Button [text]="'Cambiar'" class="submit-button" (tap)="submit()"></Button>
+
+
   </StackLayout>
 </ScrollView>
-

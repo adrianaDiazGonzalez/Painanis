@@ -2,17 +2,23 @@ import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { HttpModule, Http } from '@angular/http';
 import { Page } from "ui/page";
+import { DatosService } from "../../servicios/ope/datos"
 import { DireccionService } from "../../servicios/ope/direccion";
 import { Domicilio } from "../../modelos/ope/direccionM";
 import dialogs = require("ui/dialogs");
 
-
 @Component({
     selector: "my-app",
-    providers: [DireccionService],
-    templateUrl: "vistas/ope/direccion.html",
-    styleUrls: ["vistas/css/menu.css"]
+    providers: [DatosService],
+    templateUrl: "vistas/ope/actdir.html",
+    styleUrls: ["vistas/css/actdir.css"]
 })
+export class ActdirComponent {
+    constructor(private page: Page, private router: Router) {
+        page.actionBarHidden = true; //sirve para ocultar la barra de titulo de la ventana
+    }
+}
+
 export class DireccionComponent {
     domicilio: Domicilio;
     public title: string;
@@ -31,6 +37,7 @@ export class DireccionComponent {
     }
     //Acciones o procesos  
     guardar() {
+        /*
         var bandera = false;
         //Código que condiciona al usuario a ingresar los datos que son obligatorios para el registro de la direción
         //valida que ingrese CP
@@ -85,13 +92,6 @@ export class DireccionComponent {
                                     alert("Ingrese un Pais por favor");
                                     return;
                                 }
-                                /*//Valida que se ingrese un Alias
-                                if (this.domicilio.iAlias == null || this.domicilio.iAlias == "") {
-                                     bandera = true;
-                                     alert("Ingrese un Alias por favor");
-                                     return;
-                                 }
-                                    */
                                 //si todas las validaciones son correctas para a la insercion de datos 
                                 console.log("tabla", JSON.stringify(this.domicilio))
                                 this.menuService.postQuote(this.domicilio);
@@ -113,9 +113,9 @@ export class DireccionComponent {
                         }, );
                 }
             );
-        }
+        }*/
     }
     back() {
-        this.router.navigate(["sg/usuario"]);
-    }
+        this.router.navigate(["ope/actdir"]);
+    } 
 }

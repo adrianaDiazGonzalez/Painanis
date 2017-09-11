@@ -133,9 +133,9 @@ export class PersonaComponent {
     public onFirstChecked(args) {
         let firstSwitch = <Switch>args.object;
         if (firstSwitch.checked) {
-            this.firstSwitchState = false;
+            this.firstSwitchState = true;
         } else {
-            this.secondSwitchState = true;
+            this.secondSwitchState = false;
         }
     }
     //Metodos para el campo de fecha de nacimiento
