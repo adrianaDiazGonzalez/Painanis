@@ -3,48 +3,75 @@
 
     <item
         is-multidex="false"
-        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\internal_impl-23.4.0_33c6d2621126152dd39fe7a286ef4b8216cd5867.jar" />
+        revision="26.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-media-compat-25.3.1_2499b8a075afec74077c544eb06e9dfcea885c1f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\design\25.3.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-design-23.4.0_6140609e07e1ff8393c5dc77302306fc825e58af.jar" />
+        revision="26.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-design-25.3.1_37fb712f28c4b14b9c7e923f066eaefae5693965.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-vector-drawable-23.4.0_4ab0290831d97903d8626ba402701c0607fad4a3.jar" />
+        revision="26.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-core-ui-25.3.1_c63c4388a1368715ad4657d4370408b252574860.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Adriana\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\Painanis\runtime\unspecified\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\support-annotations-23.4.0_0bdbcafcc8fb82f8824cdd2a671687e128368759.jar" />
+        revision="26.0.1"
+        sha1="30b97ea5d6274e02330dcc69943087778363c172">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\Painanis-runtime-unspecified_0994f5592703dbcb962907d59465e7a8662b20f0.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-v4-23.4.0_f5e62c6b72fb9855bc834718c08f7161be2a901b.jar" />
+        revision="26.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-transition-25.3.1_dbc7cd0620479130504bb768a866aff37728cd1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-fragment-25.3.1_a39eb96070afe5854ecea26404feb07c031f1d30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-appcompat-v7-25.3.1_2f578ee697664f37c68cb9116fad7397a61916e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-compat-25.3.1_6f18b4ee8e9a76d3ea7aa2745036a00df791283b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -57,12 +84,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-animated-vector-drawable-23.4.0_8ab1c30224e92a073d76543f6850dd5634f3b565.jar" />
+        revision="26.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-animated-vector-drawable-25.3.1_2959c9857ad5b5d9c788ace102129903bb765b88.jar" />
     </item>
     <item
         is-multidex="false"
@@ -75,6 +102,24 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-vector-drawable-25.3.1_a36085d9b350998c5187f68fb26964ebc77cc4c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-v4-25.3.1_194fbdf46ea7eccdc336606624ef2a2ada7449bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\Painanis\runtime\unspecified\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -84,21 +129,48 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-recyclerview-v7-23.4.0_459dee120aece3fc85efde2be81b6856ac1bfac0.jar" />
+        revision="26.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-recyclerview-v7-25.3.1_5f366a3c47e6841afb17637d61767c424db4bedc.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\Painanis\runtime\unspecified\jars\libs\binding-generator.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-appcompat-v7-23.4.0_e09b48728e88021704ce636c87806805fce16598.jar" />
+        revision="26.0.1"
+        sha1="a3e74f5f1ebe12c7cfa6591158ef298c95a5275f">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\binding-generator_7692b012b03bbee7b467eb4466efe262d6e614ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\com.android.support-support-core-utils-25.3.1_07540f403af77b3c27e06b7810aa141b8b9be9b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\support-annotations-25.3.1_07cc1bdab6386cc71ca9e51c0b2d242e9420314e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\git\Painanis\platforms\android\build\intermediates\exploded-aar\widgets-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ada15dd7aad50793dcd67b281a8eb06e80007500">
+        <dex dex="C:\git\Painanis\platforms\android\build\intermediates\pre-dexed\F0\debug\intermediates-exploded-aar-widgets-release_8d0c042597cbe3fb8397484a1425829ded068e4c.jar" />
     </item>
 
 </items>

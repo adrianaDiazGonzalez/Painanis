@@ -1,5 +1,8 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
+import { Page } from "ui/page";
+import { Frame } from "ui/frame";
+import FrameModule = require("ui/frame");
 
 @Component({
   selector: "my-app",

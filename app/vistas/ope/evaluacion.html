@@ -1,0 +1,8 @@
+
+
+  <DockLayout rows="auto auto" columns="* *" >
+    <Image src="~/images/smiling.png"   class= "genero" textWrap="true"  row="0" col="0" horizontalAlignment="left" ></Image>  
+    <Switch checked="false" (checkedChange)="onFirstChecked($event)" row="0" col="1" horizontalAlignment="right"
+     [(ngModel)]="persona.lGenero" ></Switch>
+    <Image src="~/images/sad.png" class= "genero" textWrap="true"   row="0" col="2" horizontalAlignment="left"  ></Image>   
+ </DockLayout>

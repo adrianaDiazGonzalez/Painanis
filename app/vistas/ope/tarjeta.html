@@ -1,8 +1,22 @@
 <ScrollView>
-    <StackLayout>
-        
-         <label text="Tarjeta" class="info1" horizontalAlignment="center"></label>
-       
-        
+<StackLayout>
+    <label text="Tarjeta" class="info1" horizontalAlignment="center"></label>
+    <ScrollView>
+        <StackLayout>
+                <DockLayout>
+                        <Image src="~/images/go.png" col="0" row="0" class="back" (tap)="back()" horizontalAlignment="left"></Image>
+                </DockLayout>
+             <Label text=" Registro de tarjeta de debito o credito " class="clase" textWrap="true" horizontalAlignment="right"> </Label >
+             <Image src=" ~/images/tarjeta.png " class="img" ></Image>  
+             <Label class=" texto " text=" Ingrese su numero de tarjeta " horizontalAlignment="left"textWrap="true"> </Label >
+             <TextField hint=" Numero de tarjeta " [(ngModel)]="cp" keyboardType="Number" verticalAlignment="center"></TextField>
+             <Label class="texto" text=" Clave CCV " horizontalAlignment="left"> </Label >
+             <TextField class="h3 p-15" hint=" clave " ></TextField>
+             <Label class="texto" text=" Mes de vencimiento " horizontalAlignment="left"> </Label >
+             <Label class="texto" text=" Año de vencimiento " horizontalAlignment="left"> </Label >
+             <Button  class="botoncito" text=" Agregar " ></Button>
+             
+             </StackLayout>
+             </ScrollView>
     </StackLayout>
 </ScrollView>

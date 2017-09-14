@@ -5,7 +5,8 @@ import { HttpModule, Http } from '@angular/http';
 import { Page } from "ui/page";
 import { Frame } from "ui/frame";
 import FrameModule = require("ui/frame");
-
+import * as buttonModule from "tns-core-modules/ui/button";
+import * as colorModule from "tns-core-modules/color";
 @Component({
   selector: "my-app",
   providers: [CategoriaService],
