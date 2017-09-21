@@ -69,16 +69,14 @@ export class PersonaComponent {
         }
         //valida que el Apellido Paterno sean letras y no numeros 
         apRegex = /^([A-Z][a-z])/;
-        apnum = /^[0-9-]/;
+
         if (this.persona.cApaterno != "") {
-            if (!apRegex.test(this.persona.cApaterno)&& apnum.test(this.persona.cApaterno)) {
+            if (!apRegex.test(this.persona.cApaterno)) {
                  bandera = true;
-                 
-                alert("Ingrese un Apellido Paterno valido por favor");
+                 alert("Ingrese un Apellido Paterno valido por favor");
                 return;
             }
         }
-
         //valida que el Apellido Materno sean letras y no numeros 
         amRegex = /^([A-Z][a-z])/;
         if (this.persona.cAmaterno != null) {
@@ -114,6 +112,7 @@ export class PersonaComponent {
                 return;
             }
         }
+
         //si todas las validaciones son correctas para a la insercion de datos  
         this.personaService.postQuote(this.persona).
             then((resolve) => {
