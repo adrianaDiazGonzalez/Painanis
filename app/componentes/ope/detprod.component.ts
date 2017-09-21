@@ -8,8 +8,7 @@ import { Frame } from "ui/frame";
 import FrameModule = require("ui/frame");
 import { ListPicker } from "ui/list-picker";
 
-let pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
-"Dugtrio", "Meowth", "Persian", "Psyduck", "Arcanine", "Poliwrath", "Machoke"];
+
 
 @Component({
   selector: "my-app",
@@ -29,8 +28,6 @@ export class DetProductoComponent {
   constructor(private page: Page, private router: Router) {
     page.actionBarHidden = true; //sirve para ocultar la barra de titulo de la ventana
     this.pokemons = [];
-          for (let i = 0; i < pokemonList.length; i++) {
-              this.pokemons.push(pokemonList[i]);
-          }
+         
   }
 }
