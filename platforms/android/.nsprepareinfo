@@ -1,6 +1,10 @@
 {
+<<<<<<< HEAD
 	"time": "Thu Sep 21 2017 16:31:00 GMT-0500 (Hora de verano central (México))",
 	"nativePlatformStatus": "3",
+=======
+	"time": "Thu Sep 21 2017 14:11:54 GMT-0500 (Hora de verano central (México))",
+>>>>>>> 6d84579a25474c03540683b2feca405bb5e329da
 	"bundle": false,
 	"release": false,
 	"changesRequireBuild": false,
