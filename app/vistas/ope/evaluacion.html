@@ -1,8 +1,29 @@
+<ScrollView>
+  <StackLayout>
+      <DockLayout class = "clase">
+          <Label class=" texto " text=" EVALUACION " horizontalAlignment="center"textWrap="true"> </Label >
+      </DockLayout>
+    <DockLayout>
+      <Label text=" ALIMENTOS " class="clase" textWrap="true" horizontalAlignment="left"> </Label>
+    <DockLayout rows="auto auto" columns="* *" horizontalAlignment="right">
+      <Image src="~/images/smiling.png" class="genero" textWrap="true" row="0" col="0" horizontalAlignment="right"></Image>
+      <Switch checked="false" (checkedChange)="onFirstChecked($event)" row="0" col="1" horizontalAlignment="right" [(ngModel)]="persona.lGenero"></Switch>
+      <Image src="~/images/sad.png" class="genero" textWrap="true" row="0" col="2" horizontalAlignment="left"></Image>
+    </DockLayout>
+  </DockLayout>
+  <TextView  style="margin-top: 15px" borderColor="#000000" borderWidth="1"  height="300px" hint=" Observaciones "  returnKeyType="send" class="input input-border"></TextView> 
+<DockLayout>
+  <Label text=" PAINANI " class="clase" textWrap="true" horizontalAlignment="left"> </Label>
+<DockLayout rows="auto auto" columns="* *" horizontalAlignment="right">
+  <Image src="~/images/smiling.png" class="genero" textWrap="true" row="0" col="0" horizontalAlignment="right"></Image>
+  <Switch checked="false" (checkedChange)="onFirstChecked($event)" row="0" col="1" horizontalAlignment="right" [(ngModel)]="persona.lGenero"></Switch>
+  <Image src="~/images/sad.png" class="genero" textWrap="true" row="0" col="2" horizontalAlignment="left"></Image>
+</DockLayout>
+</DockLayout>
+<TextView  style="margin-top: 15px" borderColor="#000000" borderWidth="1" height="300px" hint="Observaciones "  returnKeyType="send" class="input input-border"></TextView>
 
+<Button  class="botoncito" text=" Enviar " ></Button>
+<Button  class="botoncito" text=" Salir " ></Button>
 
-  <DockLayout rows="auto auto" columns="* *" >
-    <Image src="~/images/smiling.png"   class= "genero" textWrap="true"  row="0" col="0" horizontalAlignment="left" ></Image>  
-    <Switch checked="false" (checkedChange)="onFirstChecked($event)" row="0" col="1" horizontalAlignment="right"
-     [(ngModel)]="persona.lGenero" ></Switch>
-    <Image src="~/images/sad.png" class= "genero" textWrap="true"   row="0" col="2" horizontalAlignment="left"  ></Image>   
- </DockLayout>
+  </StackLayout>
+</ScrollView>

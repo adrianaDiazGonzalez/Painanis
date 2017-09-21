@@ -13,7 +13,17 @@ import { DatosService } from "../../servicios/ope/datos";
     styleUrls: ["vistas/css/datos.css"]
 })
 export class DatosComponent {
-     constructor(private page: Page, private router: Router) {
-    page.actionBarHidden = true; //sirve para ocultar la barra de titulo de la ventana
-}
+    constructor(private page: Page, private router: Router) {
+        page.actionBarHidden = true; //sirve para ocultar la barra de titulo de la ventana
+    }
+
+    actdatos() {
+        this.router.navigate(["ope/actDatPer"]);
+    }
+    actdir() {
+        this.router.navigate(["ope/actdir"]);
+    }
+    ingtar() {
+        this.router.navigate(["ope/tarjeta"]);
+    }
 }

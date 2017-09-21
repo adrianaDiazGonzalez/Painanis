@@ -6,6 +6,10 @@ import { HttpModule, Http } from '@angular/http';
 import { Page } from "ui/page";
 import { Frame } from "ui/frame";
 import FrameModule = require("ui/frame");
+import { ListPicker } from "ui/list-picker";
+
+let pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
+"Dugtrio", "Meowth", "Persian", "Psyduck", "Arcanine", "Poliwrath", "Machoke"];
 
 @Component({
   selector: "my-app",
@@ -15,7 +19,18 @@ import FrameModule = require("ui/frame");
 })
 
 export class DetProductoComponent {
+  public pokemons: Array<string>;
+  public picked: string;
+  public selectedIndexChanged(args) {
+      let picker = <ListPicker>args.object;
+      console.log("picker selection: " + picker.selectedIndex);
+      this.picked = this.pokemons[picker.selectedIndex];
+  }
   constructor(private page: Page, private router: Router) {
     page.actionBarHidden = true; //sirve para ocultar la barra de titulo de la ventana
-}
+    this.pokemons = [];
+          for (let i = 0; i < pokemonList.length; i++) {
+              this.pokemons.push(pokemonList[i]);
+          }
+  }
 }

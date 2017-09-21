@@ -8,11 +8,13 @@ C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ct\giro.compon
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ct\local-storage.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ct\local_atributo.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\lista\lista.component.js
-C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\ActualizaDatos.component.js
+C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\actDatosPer.component.js
+C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\actdir.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\categoria.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\datos.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\detprod.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\direccion.component.js
+C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\evaluacion.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\ope\tarjeta.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\sg\cambiocontra.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\sg\contrasena.component.js
@@ -20,11 +22,14 @@ C:\git\Painanis\platforms\android\src\main\assets\app\componentes\sg\persona.com
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\sg\usuario.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\componentes\sg\valida.component.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ct\giro.js
+C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\actDatosPer.js
+C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\actdir.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\actualizaDatos.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\atributos.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\categorias.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\datos.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\direccionM.js
+C:\git\Painanis\platforms\android\src\main\assets\app\modelos\ope\evaluacion.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\sg\cambiocontrasena.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\sg\contrasena.js
 C:\git\Painanis\platforms\android\src\main\assets\app\modelos\sg\persona.js
@@ -36,6 +41,7 @@ C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ope\atributos.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ope\categorias.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ope\datos.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ope\direccion.js
+C:\git\Painanis\platforms\android\src\main\assets\app\servicios\ope\evalucion.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\sg\cambiocontra.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\sg\contrasena.js
 C:\git\Painanis\platforms\android\src\main\assets\app\servicios\sg\persona.js

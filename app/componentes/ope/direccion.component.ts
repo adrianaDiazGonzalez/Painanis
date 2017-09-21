@@ -118,19 +118,4 @@ export class DireccionComponent {
     back() {
         this.router.navigate(["sg/usuario"]);
     }
-    id1() {
-        this.domicilio.iAlias = "Casa";
-    }
-    id2() {
-        this.domicilio.iAlias = "Oficina";
-    }
-    id3() {
-        this.domicilio.iAlias = "Familiares";
-    }
-    id4() {
-        this.domicilio.iAlias = "Novio-a";
-    }
-    id5() {
-        this.domicilio.iAlias = "Amigos";
-    }
 }

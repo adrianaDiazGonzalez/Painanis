@@ -1,3 +1,16 @@
 .genero{
     width: 20%;
   }
+  .clase{
+    margin-left: 9;
+    margin-right: 150;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .botoncito{
+    background-color: #00CB5B;
+    color: white;
+    margin-top: 100;
+    margin-bottom: 10;
+  }
+  

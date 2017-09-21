@@ -18,69 +18,73 @@ import FrameModule = require("ui/frame");
     <Button text = "Contraseña"  class="boton" (tap)="contrasena()"></Button>
     <Button text = "Cambio de Contraseña"    class="boton" (tap)="cambio()"></Button>
     <Button text = "Direccion"    class="boton" (tap)="dir()"></Button>
-    <Button text = "Datos"        class="boton" (tap)="datos()"></Button>
-    <Button text = "Act. Datos per"        class="boton" (tap)="actualizadatos()"></Button>
-     <Button text = "atributos"        class="boton" (tap)="atributos()"></Button>
-     <Button text = "tarjeta"        class="boton" (tap)="tarjeta()"></Button>
-     <Button text = "detalleprod"        class="boton" (tap)="detprod()"></Button>   
+    <Button text = "Ménu"        class="boton" (tap)="datos()"></Button>
+    <Button text = "Act. Datos per"    class="boton" (tap)="actualizadatos()"></Button>
+    <Button text = "Act. Dir"    class="boton" (tap)="actualizadir()"></Button>
+    <Button text = "atributos"        class="boton" (tap)="atributos()"></Button>
+    <Button text = "tarjeta"        class="boton" (tap)="tarjeta()"></Button>
+    <Button text = "detalleprod"        class="boton" (tap)="detprod()"></Button>
+    <Button text = " Evaluacion "        class="boton" (tap)="evaluacion()"></Button>
+        
      </StackLayout>
   </ScrollView>
   `
 })
 export class ListaComponent {
 
-  constructor( private router: Router){
+  constructor(private router: Router) {
 
   }
-  giro()
-    {
-      this.router.navigate(["/ct/giro"]);
-    }
+  giro() {
+    this.router.navigate(["/ct/giro"]);
+  }
+
+  validar() {
+    this.router.navigate(["/sg/valida"]);
+  }
+
+  cat() {
+    this.router.navigate(["/ope/categoria"]);
+  }
+  usuario() {
+    this.router.navigate(["/sg/usuario"]);
+  }
+  registro() {
+    this.router.navigate(["/sg/persona"]);
+  }
+  contrasena() {
+    this.router.navigate(["/sg/contrasena"]);
+  }
+  cambio() {
+    this.router.navigate(["/sg/cambio"]);
+  }
+  dir() {
+    this.router.navigate(["/ope/dir"]);
+  }
   
-  validar()
-    {
-      this.router.navigate(["/sg/valida"]);
-    }
-    
-  cat()
-    {
-      this.router.navigate(["/ope/categoria"]);
-    }
-    usuario()
-    {
-      this.router.navigate(["/sg/usuario"]);
-    }
-     registro()
-    {
-      this.router.navigate(["/sg/persona"]);
-    }
-    contrasena()
-    {
-      this.router.navigate(["/sg/contrasena"]);
-    }
-     cambio()
-    {
-      this.router.navigate(["/sg/cambio"]);
-    }
-    dir()
-    {
-      this.router.navigate(["/ope/dir"]);
-    }
-    datos()
-    {
-      this.router.navigate(["/ope/datos"]);
-    }
-     atributos()
-    {
-      this.router.navigate(["/ct/atributo"]);
-    }
-     tarjeta()
-    {
-      this.router.navigate(["ope/tarjeta"]);
-    }
-     detprod()
-    {
-      this.router.navigate(["ope/detprod"]);
-    }
+  //Adriana
+  datos() {
+    this.router.navigate(["/ope/datos"]);
+  }
+  actualizadatos() {
+     this.router.navigate(["/ope/actDatPer"]);
+  }
+  actualizadir() {
+     this.router.navigate(["/ope/actdir"]);
+  } 
+
+   //edgar
+  atributos() {
+    this.router.navigate(["/ct/atributo"]);
+  }
+  tarjeta() {
+    this.router.navigate(["ope/tarjeta"]);
+  }
+  detprod() {
+    this.router.navigate(["ope/detprod"]);
+  }
+  evaluacion(){
+    this.router.navigate(["ope/evaluacion"]);
+  }
 }
 

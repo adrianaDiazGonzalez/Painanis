@@ -1,12 +1,20 @@
 <ScrollView>
     <StackLayout>
         <StackLayout>
-         <label text="Registro de Datos" class="info1" horizontalAlignment="center"></label>
+         <label text="Ménu" horizontalAlignment="center"></label>
          </StackLayout>
         <DockLayout>
-            <Image src="~/images/c.png" col="0" row="0" class="back" (tap)="back()" horizontalAlignment="left"></Image>
-            <label text="Registro de Tarjeta" class="info1" horizontalAlignment="center"></label>
+            <Image src="~/images/user.png" col="0" row="0" class="img" (tap)="actdatos()" horizontalAlignment="left"></Image>
+            <label text="Actualiza tus datos" class="info1" (tap)="actdatos()" horizontalAlignment="center"></label>
         </DockLayout>
-        <Button text="Guardar" class="submit-button" (tap)="guardar()"></Button>
+        <DockLayout>
+            <Image src="~/images/dir.png" col="0" row="0" class="img" (tap)="actdir()" horizontalAlignment="left"></Image>
+            <label text="Actualiza tu dirección" class="info1" (tap)="actdir()" horizontalAlignment="center"></label>
+        </DockLayout>
+        <DockLayout>
+            <Image src="~/images/card.png" col="0" row="0" class="img" (tap)="ingtar()" horizontalAlignment="left"></Image>
+            <label text="Registro de Tarjeta" class="info1" (tap)="ingtar()" horizontalAlignment="center"></label>
+        </DockLayout>
+        
     </StackLayout>
 </ScrollView>
