@@ -15,4 +15,21 @@ export class EleccionComponent {
     constructor(private page: Page, private router: Router) {
         page.actionBarHidden = true; //sirve para ocultar la barra de titulo de la ventana
     }
+
+    registro(){
+        this.router.navigate(["/sg/persona"]);
+    }
+    prov(){
+        this.router.navigate(["/sg/proveedor"]);
+    }
+
+    painani(){
+        this.router.navigate(["/sg/regvarios"]);
+    }
+    sup(){
+        this.router.navigate(["/sg/regvarios"]);
+    }
+    direc(){
+        this.router.navigate(["/sg/regvarios"]);
+    }
 }

@@ -52,10 +52,6 @@ export const routes = [
     { path: "ope/datos", component: DatosComponent },
     { path: "ope/actDatPer", component: ActualizaDatosComponent },
     { path: "ope/actdir", component: ActdirComponent },
-<<<<<<< HEAD
-    
-=======
->>>>>>> 6d84579a25474c03540683b2feca405bb5e329da
 
     //Edgar
     { path: "ct/giro", component: GiroComponent },
@@ -91,14 +87,9 @@ export const navigatableComponents = [
     ActualizaDatosComponent,
     ActdirComponent,
     TarjetaComponent,
-<<<<<<< HEAD
     DetProductoComponent,
-    EvaluacionComponent
-=======
->>>>>>> 6d84579a25474c03540683b2feca405bb5e329da
-
-
-    DetProductoComponent,
+    EvaluacionComponent,
+    
     AtributosComponent,
     GiroComponent
 ];

@@ -28,7 +28,7 @@ export class ValidaService {
           alert("Codigo Postal no valido");
         }
         else {
-          this.router.navigate(["sg/persona"]);
+          this.router.navigate(["ope/eleccion"]);
         }
       }, error => {
         console.log("ERROR: ", error);

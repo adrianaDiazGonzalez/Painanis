@@ -36,15 +36,11 @@ import FrameModule = require("ui/frame");
 
     <Button text = "Giro"       class="boton" (tap)="giro()"></Button> 
     <Button text = "atributos"        class="boton" (tap)="atributos()"></Button>
-<<<<<<< HEAD
     <Button text = "tarjeta"        class="boton" (tap)="tarjeta()"></Button>
     <Button text = "detalleprod"        class="boton" (tap)="detprod()"></Button>
     <Button text = " Evaluacion "        class="boton" (tap)="evaluacion()"></Button>
         
      </StackLayout>
-=======
-   </StackLayout>
->>>>>>> 6d84579a25474c03540683b2feca405bb5e329da
   </ScrollView>
   `
 })
@@ -107,17 +103,16 @@ export class ListaComponent {
   detprod() {
     this.router.navigate(["ope/detprod"]);
   }
-<<<<<<< HEAD
   evaluacion(){
     this.router.navigate(["ope/evaluacion"]);
-=======
+  }
+
 
    giro() {
     this.router.navigate(["/ct/giro"]);
   }
    atributos() {
     this.router.navigate(["/ct/atributo"]);
->>>>>>> 6d84579a25474c03540683b2feca405bb5e329da
   }
 }
 

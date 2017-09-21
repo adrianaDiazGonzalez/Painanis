@@ -2,29 +2,34 @@
     <StackLayout>
 
         <StackLayout>
-            <label text="¿Deseas comprar?"></label>
+            <label text="¿Deseas comprar?" class="info1" horizontalAlignment="center"></label>
         </StackLayout>
         <DockLayout>
-            <Image src="~/images/cliente.png" class="img" (tap)="actdatos()" ></Image>
-            <label text="Registrate" class="inf" (tap)="actdatos()" horizontalAlignment="center"></label>
+            <Image src="~/images/cliente.png" class="img" (tap)="registro()" ></Image>
+            <label text="Registrate" class="inf" (tap)="registro()" horizontalAlignment="center"></label>
         </DockLayout>
 
         <StackLayout>
-            <label text="¿Deseas unirte al club de trabajo PAINANIS?" horizontalAlignment="center"></label>
+            <label text="¿Deseas unirte al club de trabajo PAINANIS?"  class="info1" horizontalAlignment="center"></label>
         </StackLayout>
 
         <DockLayout>
-            <Image src="~/images/painani.png" col="0" row="0" class="img" (tap)="actdir()" horizontalAlignment="left"></Image>
-            <label text="Repartidor" class="inf" (tap)="actdir()" horizontalAlignment="center"></label>
+            <Image src="~/images/store.png" col="0" row="0" class="img" (tap)="prov()" horizontalAlignment="left"></Image>
+            <label text="Proveedor" class="inf" (tap)="prov()" horizontalAlignment="center"></label>
         </DockLayout>
 
         <DockLayout>
-            <Image src="~/images/supervisor.png" col="0" row="0" class="img" (tap)="ingtar()" horizontalAlignment="left"></Image>
-            <label text="Supervisor" class="inf" (tap)="ingtar()" horizontalAlignment="center"></label>
+            <Image src="~/images/painani.png" col="0" row="0" class="img" (tap)="painani()" horizontalAlignment="left"></Image>
+            <label text="Repartidor" class="inf" (tap)="painani()" horizontalAlignment="center"></label>
+        </DockLayout>
+
+        <DockLayout>
+            <Image src="~/images/supervisor.png" col="0" row="0" class="img" (tap)="sup()" horizontalAlignment="left"></Image>
+            <label text="Supervisor" class="inf" (tap)="sup()" horizontalAlignment="center"></label>
         </DockLayout>
         <DockLayout>
-            <Image src="~/images/director.png" col="0" row="0" class="img" (tap)="ingtar()" horizontalAlignment="left"></Image>
-            <label text="Director" class="inf" (tap)="ingtar()" horizontalAlignment="center"></label>
+            <Image src="~/images/director.png" col="0" row="0" class="img" (tap)="direc()" horizontalAlignment="left"></Image>
+            <label text="Director" class="inf" (tap)="direc()" horizontalAlignment="center"></label>
         </DockLayout>
 
     </StackLayout>

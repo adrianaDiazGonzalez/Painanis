@@ -18,13 +18,8 @@
 
 }
 .info1{
-    margin-top: 50;
-    margin-left: 70;
-    margin-right: 70;
-    margin-bottom: 30;
-    font: caption bold;
-    font-size: 20;
-    width: 80%;
+    font: caption;
+    font-size: 18;
 }
 .img{
     margin: 30;

@@ -27,7 +27,7 @@ export class DetProductoComponent {
   }
   constructor(private page: Page, private router: Router) {
     page.actionBarHidden = true; //sirve para ocultar la barra de titulo de la ventana
-    this.pokemons = [];
+    
          
   }
 }
