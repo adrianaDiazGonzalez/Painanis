@@ -2,34 +2,44 @@ import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { HttpModule, Http } from '@angular/http';
 import { Page } from "ui/page";
-import {ProveedorService} from "../../servicios/sg/proveedor";
 import { Persona } from "../../modelos/sg/persona";
+import { PersonaService } from "../../servicios/sg/persona";
 import { DatePicker } from "ui/date-picker";
 import * as datePickerModule from "tns-core-modules/ui/date-picker";
 import { EventData } from "data/observable";
 import { Switch } from "ui/switch";
+//importacion para mantener la sesion activa
+import { SesionActiva } from "../../sesionActiva";
 
-
+//Declaración de los componentes de la vista
 @Component({
     selector: "my-app",
-    providers: [ProveedorService],
-    templateUrl: "vistas/ope/proveedor.html",
-    styleUrls: ["vistas/css/proveedor.css"]
+    providers: [PersonaService],
+    moduleId: module.id,
+    templateUrl: "../../vistas/ope/proveedor.html",
+    styleUrls: ["../../vistas/css/proveedor.css", "../../app.css"]
 })
-export class ProveedorComponent {
-
+//Acciones y procesos de la ventana 
+export class PersonaComponent {
     //Declaracion de variable
     //variables para el radio button de genero
     public firstSwitchState = false;
     public secondSwitchState = true;
-     public personaList: Array<Persona>;
+    public personaList: Array<Persona>;
     persona: Persona;
 
-    constructor(private page: Page, private router: Router) {
-        page.actionBarHidden = true; //sirve para ocultar la barra de titulo de la ventana
+    //Constructor
+    constructor(private page: Page, private router: Router, private personaService: PersonaService) {
+        page.actionBarHidden = true; //Oculta la barra superior en la pantalla
+        this.persona = new Persona(); //Instancea el objeto de persona a la tabla Persona
+        this.persona.iPersona = "0";
+        this.persona.iTipoPersona = "2";
+        this.persona.lGenero = false;
+        this.persona.dtFechaNac = "";
+        this.persona.lActivo = true;
     }
-
-     submit() {
+    //Acciones o procesos al precionar el boton
+    submit() {
         //variables para validaciones
         var bandera = false;
         var emailRegex;
@@ -102,9 +112,27 @@ export class ProveedorComponent {
                 return;
             }
         }
-        }
-     }
-         //Metodo para el campo de Genero
+
+        //si todas las validaciones son correctas para a la insercion de datos  
+        this.personaService.postQuote(this.persona).
+            then((resolve) => {
+                resolve
+                    .map(response => response.json())
+                    .subscribe(result => {
+                        if (result.response.opcMensaje != "") {
+                            alert("El usuario ya existe");
+                        }
+                        else {
+                            this.router.navigate(["ope/dir"]);
+                        }
+                    })
+            });
+
+        //localstorage
+        SesionActiva.sesion = this.persona;
+    }
+    }
+    //Metodo para el campo de Genero
     public onFirstChecked(args) {
         let firstSwitch = <Switch>args.object;
         if (firstSwitch.checked) {
