@@ -8,7 +8,8 @@
 <StackLayout>
 
     <GridLayout *ngFor="let todo of todoList" rows="auto" columns="auto, *, auto, auto">
-        <Button row="0" col="0" [text]="todo.lActivo ? '&#xf05d;' : '&#xf10c;'" class="fa" [class.btn-done]="todo.done" (tap)="toggleDone(todo)"></Button>
+        <Button row="0" col="0" [text]="todo.lActivo ? '&#xf05d;' : '&#xf10c;'" 
+            class="fa" [class.btn-done]="todo.done" (tap)="toggleDone(todo)"></Button>
         
         <Label *ngIf="!editar" row="0" col="1" [text]="todo.cGiro" [class.done]="todo.done" textWrap="true"></Label>
         <TextField *ngIf="editar" row="0" col="1" hint="Ingresa el nuevo nombre" [(ngModel)]="todo.cGiro"></TextField>

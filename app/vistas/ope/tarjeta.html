@@ -1,3 +1,4 @@
+<!--Tarjeta
 <ScrollView>
 <StackLayout>
     <label text="Tarjeta" class="info1" horizontalAlignment="center"></label>
@@ -6,17 +7,89 @@
                 <DockLayout>
                         <Image src="~/images/go.png" col="0" row="0" class="back" (tap)="back()" horizontalAlignment="left"></Image>
                 </DockLayout>
-             <Label text=" Registro de tarjeta de debito o credito " class="clase" textWrap="true" horizontalAlignment="right"> </Label >
+             <Label text="      Registro de tarjeta de debito o credito " class="clase" textWrap="true" horizontalAlignment="right"> </Label >
              <Image src=" ~/images/tarjeta.png " class="img" ></Image>  
              <Label class=" texto " text=" Ingrese su numero de tarjeta " horizontalAlignment="left"textWrap="true"> </Label >
-             <TextField hint=" Numero de tarjeta " [(ngModel)]="cp" keyboardType="Number" verticalAlignment="center"></TextField>
+             <TextField hint=" 1425 3698 5896 2356 " [(ngModel)]="cp" keyboardType="Number" verticalAlignment="center"></TextField>
+            
              <Label class="texto" text=" Clave CCV " horizontalAlignment="left"> </Label >
-             <TextField class="h3 p-15" hint=" clave " ></TextField>
+             <TextField class="h3 p-15" hint=" 125 " ></TextField>
+            
              <Label class="texto" text=" Mes de vencimiento " horizontalAlignment="left"> </Label >
+                 <TextField class="h3 p-15" hint=" 01 " ></TextField>
+                
              <Label class="texto" text=" Año de vencimiento " horizontalAlignment="left"> </Label >
-             <Button  class="botoncito" text=" Agregar " ></Button>
+                <TextField class="h3 p-15" hint=" 2020 " ></TextField>
+             <Button  class="botoncito" text=" Aceptar " ></Button>
              
              </StackLayout>
              </ScrollView>
+    </StackLayout>
+</ScrollView>
+-->
+
+<!--eleccion tarjeta-->
+<!--
+<ScrollView>
+<StackLayout>
+    
+    <ScrollView>
+        <StackLayout>
+                <DockLayout>
+                        <Image src="~/images/go.png" col="0" row="0" class="back" (tap)="back()" horizontalAlignment="left"></Image>
+                        <label text="Elección de Tarjeta" class="info" horizontalAlignment="center"></label>
+                </DockLayout>
+
+                <DockLayout>
+                        <Image src="~/images/card1.png" col="0" row="0" class="img" (tap)="back()" horizontalAlignment="left"></Image>
+                        <label text=" **** **** **** 1452" class="info1" horizontalAlignment="center"></label>
+                </DockLayout>
+
+                <DockLayout>
+                        <Image src="~/images/card2.png" col="0" row="0" class="img" (tap)="back()" horizontalAlignment="left"></Image>
+                        <label text=" **** **** **** 0147" class="info1" horizontalAlignment="center"></label>
+                </DockLayout>
+
+                 <DockLayout>
+                        <Image src="~/images/card3.png" col="0" row="0" class="img" (tap)="back()" horizontalAlignment="left"></Image>
+                        <label text=" **** **** **** 3587" class="info1" horizontalAlignment="center"></label>
+                </DockLayout> 
+                    
+                <Button [text]="'Confirmar Tarjeta'" class="submit-button" (tap)="submit()"></Button>
+                <label text=" Registrar Tarjeta" class="info2" horizontalAlignment="center"></label>
+
+    </StackLayout>
+</ScrollView>
+
+-->
+
+
+<ScrollView>
+        <StackLayout>
+                <DockLayout>
+                        <Image src="~/images/go.png" col="0" row="0" class="back" (tap)="back()" horizontalAlignment="left"></Image>
+                        <label text="Pago en Efectivo" class="info" horizontalAlignment="center"></label>
+                </DockLayout>
+
+                <DockLayout>
+                        <label text="Total a pagar" class="info1" horizontalAlignment="center"></label>
+                        <TextField hint=" 128 " keyboardType="phone"></TextField>
+                </DockLayout>
+
+                <DockLayout>
+                        
+                        <label text=" Denominación de pago" class="info1" horizontalAlignment="center"></label>
+                        <TextField hint="200" keyboardType="phone"></TextField>
+                </DockLayout>
+
+                 <DockLayout>
+                        
+                        <label text=" Cambio a entregar" class="info1" horizontalAlignment="center"></label>
+                        <TextField hint=" 72" keyboardType="phone"></TextField>
+                </DockLayout> 
+                    
+                <Button [text]="'Confirmar Pago'" class="submit-button" (tap)="submit()"></Button>
+
+
     </StackLayout>
 </ScrollView>

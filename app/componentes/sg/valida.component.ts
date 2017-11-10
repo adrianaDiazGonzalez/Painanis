@@ -25,13 +25,15 @@ export class ValidaComponent {
   }
   //Acciones o procesos
   validar() {
+    this.router.navigate(["ope/carrito"]);
     if (this.cp == null || this.cp == "") {
       alert("Ingrese un Código Postal");
       return;
     }
+
     var result = this.validaService.getQuote(this.cp);
   }
   sesion() {
-    this.router.navigate(["sg/usuario"]);
+    this.router.navigate(["ope/carrito"]);
   }
 }

@@ -1,28 +1,18 @@
 import { ListaComponent } from "./componentes/lista/lista.component"
-
 import { ValidaComponent } from "./componentes/sg/valida.component"
-
 import { LoginComponent } from "./componentes/sg/usuario.component"
 import { PasswordComponent } from "./componentes/sg/contrasena.component"
 import { ChanceComponent } from "./componentes/sg/cambiocontra.component"
-
-
 import { EleccionComponent } from "./componentes/ope/elecciongiro.component"
-
-import { PersonaComponent } from "./componentes/sg/persona.component"
-import { ProveedorComponent } from "./componentes/sg/proveedor.component"
-import { RegvariosComponent } from "./componentes/sg/regvarios.component"
-
+import { PersonaComponent } from "../app/componentes/sg/persona.component"
+//import { ProveedorComponent } from "./componentes/sg/proveedor.component"
+//import { RegvariosComponent } from "./componentes/sg/regvarios.component"
 import { DireccionComponent } from "./componentes/ope/direccion.component"
-
 import { CategoriasComponent } from "./componentes/ope/categoria.component"
-
 //adriana
 import { DatosComponent } from "./componentes/ope/datos.component"
 import { ActualizaDatosComponent } from "./componentes/ope/actDatosPer.component"
 import { ActdirComponent } from "./componentes/ope/actdir.component"
-
-
 //Edgar
 import { GiroComponent } from "./componentes/ct/giro.component"
 import { AtributosComponent } from "./componentes/ct/atributos.component"
@@ -31,7 +21,18 @@ import { DetProductoComponent } from "./componentes/ope/detprod.component"
 import { EvaluacionComponent } from "./componentes/ope/evaluacion.component"
 
 
+//Pantallas documentacion
+import { CarritoComponent } from "./componentes/ope/carrito"
+
+
 export const routes = [
+
+     { path: "ope/carrito", component: CarritoComponent },
+
+
+
+
+
     { path: "", component: ListaComponent },
     { path: "sg/valida", component: ValidaComponent },
 
@@ -42,8 +43,8 @@ export const routes = [
     { path: "ope/eleccion", component: EleccionComponent },
     
     { path: "sg/persona", component: PersonaComponent },
-    { path: "sg/proveedor", component: ProveedorComponent },
-    { path: "sg/regvarios", component: RegvariosComponent },
+   // { path: "sg/proveedor", component: ProveedorComponent },
+    //{ path: "sg/regvarios", component: RegvariosComponent },
 
     { path: "ope/dir", component: DireccionComponent },
 
@@ -65,6 +66,14 @@ export const routes = [
 ];
 
 export const navigatableComponents = [
+
+    CarritoComponent,
+
+
+
+
+
+    
     ListaComponent,
 
     ValidaComponent,
@@ -76,8 +85,8 @@ export const navigatableComponents = [
     EleccionComponent,
 
     PersonaComponent,
-    ProveedorComponent,
-    RegvariosComponent,
+    //ProveedorComponent,
+    //RegvariosComponent,
 
     DireccionComponent,
 

@@ -7,10 +7,32 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-  .botoncito{
-    background-color: #00CB5B;
-    color: white;
-    margin-top: 100;
-    margin-bottom: 10;
-  }
-  
+   .submit-button {
+  background-color: #E73C3E ;
+  color:white;
+  margin-top: 30;
+  width: 50%;
+      margin-bottom: 0;
+}
+ .back{
+        margin: 2;
+        padding: 2;
+        width: 7%;
+        align-items: left;
+    }
+
+    
+.img {
+        width: 60%;
+        margin-left: 10;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 10;
+    }
+      .img2 {
+        width: 30%;
+        margin-left: 10;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 10;
+    }

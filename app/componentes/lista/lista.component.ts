@@ -12,6 +12,16 @@ import FrameModule = require("ui/frame");
     <ActionBar title="Ménu" class="action-bar"></ActionBar>
 
     <Button text = "Validar"     class="boton" (tap)="validar()"></Button>
+    <Button text = "Carrito Compra"     class="boton" (tap)="carrito()"></Button>
+    <Button text = "Tipo de Pago"     class="boton" (tap)="pago()"></Button>
+    <Button text = "Efectivo"     class="boton" (tap)="efectivo()"></Button>
+    <Button text = "Aviso"     class="boton" (tap)="aviso()"></Button>
+
+    <Button text = "tarjeta"        class="boton" (tap)="tarjeta()"></Button>
+    <Button text = "detalleprod"        class="boton" (tap)="detprod()"></Button>
+    <Button text = " Evaluacion "        class="boton" (tap)="evaluacion()"></Button>
+        
+
 
     <Button text = "Usuario"    class="boton" (tap)="usuario()"></Button>
     <Button text = "Contraseña"  class="boton" (tap)="contrasena()"></Button>
@@ -36,10 +46,7 @@ import FrameModule = require("ui/frame");
 
     <Button text = "Giro"       class="boton" (tap)="giro()"></Button> 
     <Button text = "atributos"        class="boton" (tap)="atributos()"></Button>
-    <Button text = "tarjeta"        class="boton" (tap)="tarjeta()"></Button>
-    <Button text = "detalleprod"        class="boton" (tap)="detprod()"></Button>
-    <Button text = " Evaluacion "        class="boton" (tap)="evaluacion()"></Button>
-        
+    
      </StackLayout>
   </ScrollView>
   `
@@ -49,6 +56,28 @@ export class ListaComponent {
   constructor(private router: Router) {
 
   }
+  carrito(){
+    this.router.navigate(["ope/carrito"]);
+
+  }
+  pago(){
+
+  }
+  efectivo(){
+
+  }
+
+  evaluacion(){
+    this.router.navigate(["ope/evaluacion"]);
+  }
+
+  tarjeta() {
+    this.router.navigate(["ope/tarjeta"]);
+  }
+  detprod() {
+    this.router.navigate(["ope/detprod"]);
+  }
+
   validar() {
     this.router.navigate(["/sg/valida"]);
   }
@@ -61,11 +90,9 @@ export class ListaComponent {
   cambioContra() {
     this.router.navigate(["/sg/cambio"]);
   }
-
   elegir(){
     this.router.navigate(["/ope/eleccion"]);
   }
-
   registroC() {
     this.router.navigate(["/sg/persona"]);
   }
@@ -75,12 +102,9 @@ export class ListaComponent {
   registroV() {
     this.router.navigate(["/sg/regvarios"]);
   }
-
     dirCli() {
     this.router.navigate(["/ope/dir"]);
   }
- 
-
   cat() {
     this.router.navigate(["/ope/categoria"]);
   }
@@ -97,15 +121,8 @@ export class ListaComponent {
   } 
 
    //edgar
-  tarjeta() {
-    this.router.navigate(["ope/tarjeta"]);
-  }
-  detprod() {
-    this.router.navigate(["ope/detprod"]);
-  }
-  evaluacion(){
-    this.router.navigate(["ope/evaluacion"]);
-  }
+  
+  
 
 
    giro() {

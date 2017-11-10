@@ -43,6 +43,7 @@ export class PasswordComponent {
         return;
       }
     }
+    
     this.passwordService.getQuote(this.usuario);
   }
 }

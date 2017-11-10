@@ -1,10 +1,15 @@
 <ScrollView>
     <StackLayout>  
          <label text="Detalle de productos" class="info1" horizontalAlignment="center"></label>
-         <Image src="~/images/smiling.png" class="genero" textWrap="true" row="0" col="0" horizontalAlignment="center"></Image>
+         <Image src="~/images/aguacate.jpg" class="genero" textWrap="true" row="0" col="0" horizontalAlignment="center"></Image>
+         
          <label text="CANTIDAD" class="info1" horizontalAlignment="center"></label>
-         <ListPicker [items]="pokemons" selectedIndex="0" (selectedIndexChange)="selectedIndexChanged($event)" class="p-15"></ListPicker>
-         <TextView  style="margin-top: 15px" borderColor="#00CB5B" borderWidth="1" height="250px" hint="Enter Note"  returnKeyType="send" class="input input-border"></TextView>
+         <TextField hint="Kilo" class="c1" [(ngModel)]="contrasena"></TextField>
+          <TextField hint="Pieza" class="c1" [(ngModel)]="contrasena"></TextField>
+         
+         <TextView  style="margin-top: 15px" borderColor="#00CB5B" borderWidth="1" height="250px" hint="Observaciones"  returnKeyType="send" class="input input-border"></TextView>
+          
+         <Button [text]="'Guardar'" class="submit-button" (tap)="cambiar()"></Button>
 
         </StackLayout>
 </ScrollView>

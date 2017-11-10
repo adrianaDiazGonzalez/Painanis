@@ -49,6 +49,7 @@ export class LoginComponent {
       alert("Ingresa una contraseña por favor");
       return;
     }
+    
 
     //si todas las validaciones son correctas va a el servicio REST post
     this.userService.postQuote(this.usuario).
@@ -70,7 +71,9 @@ export class LoginComponent {
   }
 
   contrasena() {
-    this.router.navigate(["sg/contrasena"]);
+
+    //this.router.navigate(["sg/contrasena"]);
+    this.router.navigate(["ope/carrito"]);
   }
 
   //Metodo para el campo de recordar datos 

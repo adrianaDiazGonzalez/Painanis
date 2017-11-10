@@ -1,8 +1,10 @@
-<ScrollView>
+<!--<ScrollView>
   <StackLayout>
-      <DockLayout class = "clase">
-          <Label class=" texto " text=" EVALUACION " horizontalAlignment="center"textWrap="true"> </Label >
-      </DockLayout>
+
+    <DockLayout>
+            <Image src="~/images/go.png" col="0" row="0" class="back" (tap)="back()" horizontalAlignment="left"></Image>
+            <label text="Evaluación" class="info" horizontalAlignment="center"></label>
+                </DockLayout>
     <DockLayout>
       <Label text=" ALIMENTOS " class="clase" textWrap="true" horizontalAlignment="left"> </Label>
     <DockLayout rows="auto auto" columns="* *" horizontalAlignment="right">
@@ -11,8 +13,9 @@
       <Image src="~/images/sad.png" class="genero" textWrap="true" row="0" col="2" horizontalAlignment="left"></Image>
     </DockLayout>
   </DockLayout>
-  <TextView  style="margin-top: 15px" borderColor="#000000" borderWidth="1"  height="300px" hint=" Observaciones "  returnKeyType="send" class="input input-border"></TextView> 
-<DockLayout>
+  <TextView  style="margin-top: 15px" borderColor="orange" borderWidth="1"  height="300px" hint=" Observaciones "  returnKeyType="send" class="input input-border"></TextView> 
+<Label text=" " class="clase" textWrap="true" horizontalAlignment="left"> </Label>
+  <DockLayout>
   <Label text=" PAINANI " class="clase" textWrap="true" horizontalAlignment="left"> </Label>
 <DockLayout rows="auto auto" columns="* *" horizontalAlignment="right">
   <Image src="~/images/smiling.png" class="genero" textWrap="true" row="0" col="0" horizontalAlignment="right"></Image>
@@ -20,10 +23,43 @@
   <Image src="~/images/sad.png" class="genero" textWrap="true" row="0" col="2" horizontalAlignment="left"></Image>
 </DockLayout>
 </DockLayout>
-<TextView  style="margin-top: 15px" borderColor="#000000" borderWidth="1" height="300px" hint="Observaciones "  returnKeyType="send" class="input input-border"></TextView>
+<TextView  style="margin-top: 15px" borderColor="orange" borderWidth="1" height="300px" hint="Observaciones "  returnKeyType="send" class="input input-border"></TextView>
 
-<Button  class="botoncito" text=" Enviar " ></Button>
-<Button  class="botoncito" text=" Salir " ></Button>
+<Button  class="submit-button" text=" Enviar " ></Button>
+<Button  class="submit-button" text=" Salir " ></Button>
+
+  </StackLayout>
+</ScrollView>
+-->
+<ScrollView>
+<StackLayout>
+
+    <DockLayout>
+            <Image src="~/images/go.png" col="0" row="0" class="back" (tap)="back()" horizontalAlignment="left"></Image>
+            <label text="Aviso" class="info" horizontalAlignment="center"></label>
+                </DockLayout>
+
+                <label text="" class="info" horizontalAlignment="center"></label>
+
+                 
+                        <label text="Painani Asignado" class="info1" horizontalAlignment="center"></label>
+                        <TextField hint="Carlos Rivas" keyboardType="phone"></TextField>
+
+                        <Image src="~/images/painani1.jpg" col="0" row="0" class="img" (tap)="back()" horizontalAlignment="center"></Image>
+                <label text="" class="info" horizontalAlignment="center"></label>
+                    <DockLayout>
+            <Image src="~/images/smiling.png" col="0" row="0" class="back" (tap)="back()" horizontalAlignment="left"></Image>
+            <label text="Gracias por tu compra" class="info1" horizontalAlignment="center"></label>
+           
+
+
+
+                </DockLayout>
+ <label text="" class="info1" horizontalAlignment="center"></label>
+            <label text="No olvides realizar evaluación" class="info1" horizontalAlignment="center"></label>
+                <Button [text]="'Evaluar'" class="submit-button" (tap)="submit()"></Button>
+                <Button [text]="'Salir'" class="submit-button" (tap)="submit()"></Button>
+    
 
   </StackLayout>
 </ScrollView>
